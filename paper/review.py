@@ -127,7 +127,7 @@ def digest(day_st, s, d):
             L.append("Worst avoided: " + "; ".join(f"{w['symbol']} {w['r']:+.2f}R ({w['filter']}, {w['signal_time']})" for w in worst))
         if day_st.get("whatif_error"):
             L.append(f"(what-if failed: {day_st['whatif_error']})")
-    L.append(f"\n## Since start ({s['days']} trading days)")
+    L.append(f"\n## Since start ({s['days']} trading day{'' if s['days'] == 1 else 's'})")
     if s["trades"]:
         L.append(f"Trades {s['trades']}, win rate {s['win_rate']}%, avg {s['avg_r']:+.2f}R, total {s['total_r']:+.2f}R, "
                  f"net {inr(s['net'], True)} (charges {inr(s['charges'])}), equity {inr(s['equity'])}, "
@@ -188,7 +188,7 @@ td{padding:6px 8px;border-bottom:1px solid var(--grid);font-variant-numeric:tabu
 <div class="card"><h2>Equity</h2><p class="note">Paper capital after each trading day, net of charges</p><div id="eq"></div></div>
 <div class="grid2">
  <div class="card"><h2>Daily net P&amp;L</h2><p class="note">Blue = profit day, red = loss day</p><div id="daily"></div></div>
- <div class="card"><h2>Skipped breakouts: total R if taken</h2><p class="note">Each filter's skipped signals, replayed with the same exits. Positive = the filter cost profit.</p><div id="filt"></div></div>
+ <div class="card"><h2>Skipped breakouts: total R if taken</h2><p class="note">Each filter's skipped signals, replayed with the same exits. Red: they would have lost, so the filter helped. Blue: they would have made money, so the filter cost profit.</p><div id="filt"></div></div>
 </div>
 <div class="card"><h2 id="todayh">Latest day's trades</h2><div id="today"></div></div>
 <div class="card"><h2>Latest day's skipped breakouts</h2><p class="note">What each would have done if taken at its first signal</p><div id="skipped"></div></div>

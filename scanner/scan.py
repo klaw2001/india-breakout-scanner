@@ -135,6 +135,8 @@ def run(name, asof=None):
             continue
         if df.index[-1].date() != session:
             stale += 1
+            if stale <= 5:
+                log.append(f"stale {t}: last bar {df.index[-1]}")
             continue
         if is_index:
             code, label = idx[t]

@@ -32,6 +32,19 @@ def _split(df: pd.DataFrame, chunk: list) -> dict:
     return out
 
 
+def _fix_index(sub: pd.DataFrame, daily: bool) -> pd.DataFrame:
+    """Yahoo stamps daily bars at 00:00 or at the open, in UTC or exchange time. Map every bar to its
+    IST calendar date (daily) or IST wall time (intraday) and keep one row per date."""
+    idx = pd.to_datetime(sub.index)
+    if idx.tz is not None:
+        idx = idx.tz_convert("Asia/Kolkata").tz_localize(None)
+    sub = sub.copy()
+    sub.index = idx.normalize() if daily else idx
+    if daily:
+        sub = sub[~sub.index.duplicated(keep="last")]
+    return sub.sort_index()
+
+
 def download(tickers, period="5y", interval="1d", batch=80, log=None, min_rows=30):
     """Download OHLCV for many tickers. Returns {ticker: DataFrame}."""
     frames = {}
@@ -53,8 +66,7 @@ def download(tickers, period="5y", interval="1d", batch=80, log=None, min_rows=3
             sub = sub.dropna(subset=["Close", "High", "Low"])
             sub = sub[sub["Close"] > 0]
             if len(sub) >= min_rows:
-                sub.index = pd.to_datetime(sub.index).tz_localize(None) if sub.index.tz is not None else pd.to_datetime(sub.index)
-                frames[t] = sub.astype("float64")
+                frames[t] = _fix_index(sub, interval == "1d").astype("float64")
         # missing tickers get one retry on their own (Yahoo drops a few per batch)
         missing = [t for t in chunk if t not in frames]
         if missing and len(missing) < len(chunk):
@@ -66,8 +78,7 @@ def download(tickers, period="5y", interval="1d", batch=80, log=None, min_rows=3
                     sub = sub.dropna(subset=["Close", "High", "Low"])
                     sub = sub[sub["Close"] > 0]
                     if len(sub) >= min_rows:
-                        sub.index = pd.to_datetime(sub.index).tz_localize(None) if sub.index.tz is not None else pd.to_datetime(sub.index)
-                        frames[t] = sub.astype("float64")
+                        frames[t] = _fix_index(sub, interval == "1d").astype("float64")
             except Exception:  # noqa: BLE001
                 pass
         time.sleep(1.0)

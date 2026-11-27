@@ -87,7 +87,7 @@ def _cached(name: str, log: list) -> pd.DataFrame:
                 raise RuntimeError(f"universe {name}: no data ({e})")
     df = pd.read_csv(path, dtype=str)
     df.columns = [c.strip() for c in df.columns]
-    return df.apply(lambda c: c.str.strip() if c.dtype == object else c)
+    return df.apply(lambda c: c.str.strip() if pd.api.types.is_string_dtype(c) else c)
 
 
 def _equity_names(log):

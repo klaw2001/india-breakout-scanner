@@ -1335,6 +1335,209 @@
    "text": "\u23f9 EXIT SBILIFE @ \u20b91,844.88 (square-off, 15:15) | net \u20b9166.82 \u00b7 0.11R"
   }
  ],
+ "whatif": [
+  {
+   "symbol": "ACUTAAS",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 4075.94,
+   "exit_time": "15:15",
+   "exit": 4064.97,
+   "exit_reason": "square-off",
+   "r": -0.1
+  },
+  {
+   "symbol": "DLF",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 799.5,
+   "exit_time": "15:15",
+   "exit": 807.15,
+   "exit_reason": "square-off",
+   "r": 0.68
+  },
+  {
+   "symbol": "FORCEMOT",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 20705.35,
+   "exit_time": "15:15",
+   "exit": 20349.82,
+   "exit_reason": "square-off",
+   "r": -0.6
+  },
+  {
+   "symbol": "GLENMARK",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 2743.47,
+   "exit_time": "15:15",
+   "exit": 2738.63,
+   "exit_reason": "square-off",
+   "r": -0.09
+  },
+  {
+   "symbol": "HEROMOTOCO",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 5798.9,
+   "exit_time": "15:15",
+   "exit": 5787.11,
+   "exit_reason": "square-off",
+   "r": -0.1
+  },
+  {
+   "symbol": "MFSL",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 1464.03,
+   "exit_time": "15:15",
+   "exit": 1446.78,
+   "exit_reason": "square-off",
+   "r": -0.42
+  },
+  {
+   "symbol": "PERSISTENT",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 6244.62,
+   "exit_time": "13:00",
+   "exit": 6150.33,
+   "exit_reason": "stop",
+   "r": -1.03
+  },
+  {
+   "symbol": "SAGILITY",
+   "filter": "volume",
+   "signal_time": "09:30",
+   "entry": 46.41,
+   "exit_time": "15:15",
+   "exit": 46.62,
+   "exit_reason": "square-off",
+   "r": 0.22
+  },
+  {
+   "symbol": "TORNTPHARM",
+   "filter": "chase",
+   "signal_time": "09:30",
+   "entry": 4982.49,
+   "exit_time": "10:00",
+   "exit": 4988.09,
+   "exit_reason": "target",
+   "r": 0.04
+  },
+  {
+   "symbol": "BANKBARODA",
+   "filter": "volume",
+   "signal_time": "10:00",
+   "entry": 277.36,
+   "exit_time": "15:15",
+   "exit": 274.56,
+   "exit_reason": "square-off",
+   "r": -0.63
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "filter": "volume",
+   "signal_time": "10:00",
+   "entry": 1885.74,
+   "exit_time": "15:15",
+   "exit": 1913.94,
+   "exit_reason": "square-off",
+   "r": 0.96
+  },
+  {
+   "symbol": "SRF",
+   "filter": "volume",
+   "signal_time": "10:00",
+   "entry": 2542.67,
+   "exit_time": "14:00",
+   "exit": 2508.14,
+   "exit_reason": "stop",
+   "r": -1.04
+  },
+  {
+   "symbol": "BEL",
+   "filter": "slots",
+   "signal_time": "10:00",
+   "entry": 408.45,
+   "exit_time": "15:15",
+   "exit": 405.3,
+   "exit_reason": "square-off",
+   "r": -0.52
+  },
+  {
+   "symbol": "GRASIM",
+   "filter": "volume",
+   "signal_time": "10:15",
+   "entry": 3174.59,
+   "exit_time": "15:15",
+   "exit": 3170.41,
+   "exit_reason": "square-off",
+   "r": -0.1
+  },
+  {
+   "symbol": "SUNPHARMA",
+   "filter": "volume",
+   "signal_time": "10:15",
+   "entry": 1918.96,
+   "exit_time": "15:15",
+   "exit": 1909.05,
+   "exit_reason": "square-off",
+   "r": -0.36
+  },
+  {
+   "symbol": "CIPLA",
+   "filter": "slots",
+   "signal_time": "10:15",
+   "entry": 1452.33,
+   "exit_time": "15:15",
+   "exit": 1445.28,
+   "exit_reason": "square-off",
+   "r": -0.39
+  },
+  {
+   "symbol": "BRITANNIA",
+   "filter": "slots",
+   "signal_time": "10:45",
+   "entry": 5091.24,
+   "exit_time": "12:15",
+   "exit": 5204.48,
+   "exit_reason": "target",
+   "r": 1.41
+  },
+  {
+   "symbol": "NAUKRI",
+   "filter": "volume",
+   "signal_time": "11:00",
+   "entry": 1231.62,
+   "exit_time": "15:15",
+   "exit": 1218.39,
+   "exit_reason": "square-off",
+   "r": -0.69
+  },
+  {
+   "symbol": "MARICO",
+   "filter": "volume",
+   "signal_time": "12:45",
+   "entry": 935.67,
+   "exit_time": "15:15",
+   "exit": 937.03,
+   "exit_reason": "square-off",
+   "r": 0.15
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "filter": "slots",
+   "signal_time": "12:45",
+   "entry": 2414.91,
+   "exit_time": "15:15",
+   "exit": 2420.39,
+   "exit_reason": "square-off",
+   "r": 0.25
+  }
+ ],
+ "breakouts_seen": 26,
  "replay": {
   "watchlist": "/tmp/watchlist.json",
   "candles_for": 70

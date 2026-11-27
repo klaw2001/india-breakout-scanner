@@ -1,0 +1,54 @@
+name: Paper replay
+
+# Replays one past session through the paper engine: builds the intraday watchlist as of the
+# previous trading day, then walks that day's 15-minute candles (Yahoo keeps ~60 days of them).
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Session to replay (YYYY-MM-DD)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: breakout-data
+  cancel-in-progress: false
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-scan.txt
+      - run: pip install -r requirements-scan.txt
+
+      - name: Watchlist as of the previous session, then replay
+        env:
+          DAY: ${{ github.event.inputs.date }}
+        run: |
+          echo "$DAY" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' || { echo "bad date"; exit 1; }
+          PREV=$(date -d "$DAY -1 day" +%F)
+          while [ "$(date -d "$PREV" +%u)" -gt 5 ]; do PREV=$(date -d "$PREV -1 day" +%F); done
+          echo "Watchlist as of $PREV, replaying $DAY"
+          python -m scanner.scan --scans intraday --asof "$PREV"
+          cp data/intraday/latest.json /tmp/watchlist.json
+          git checkout -q -- data && git clean -fdq data
+          python -m paper.engine replay --date "$DAY" --watchlist /tmp/watchlist.json | tee /tmp/replay.txt
+          { echo '```'; cat /tmp/replay.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save replay
+        run: |
+          git config user.name "breakout-bot"
+          git config user.email "breakout-bot@users.noreply.github.com"
+          git add paper/replays
+          git diff --cached --quiet && exit 0
+          git commit -q -m "paper replay: ${{ github.event.inputs.date }}"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1

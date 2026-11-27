@@ -1,0 +1,310 @@
+{
+ "ADANIPORTS": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹11,340 Cr +24%, PAT ₹3,682 Cr +18% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "AETHER": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹347 Cr +24%, PAT ₹68 Cr +26% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "AFFLE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹784 Cr +21%, PAT ₹130 Cr +17% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "ARVSMART": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹157 Cr +11%, EBITDA +87%, PAT ₹23 Cr +26% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "BECTORFOOD": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹631 Cr +14%, EBITDA +19%, PAT ₹46 Cr +25% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "BLUESTARCO": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹2,931 Cr +21%, PAT ₹124 Cr +25% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "BRITANNIA": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹5,598 Cr +16%, PAT ₹726 Cr +11% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "CHALET": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹502 Cr −32%, PAT ₹216 Cr +39% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "CRAFTSMAN": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹2,945 Cr +47%, PAT ₹153 Cr +68% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "DABUR": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹3,563 Cr +12%, PAT ₹499 Cr +12% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "DLF": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "PAT ₹1,301 Cr +10% (30% above consensus, helped by ₹738 Cr one-off); rev −23%, EBITDA far below consensus",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "EICHERMOT": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹7,422 Cr +20%, PAT ₹1,573 Cr +14.9% YoY (just under the +15% Good cutoff)",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "EMAMILTD": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹1,088 Cr +36%, EBITDA +25% (ahead per Nuvama), but PAT ₹146 Cr −1%",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "ETERNAL": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "PAT ₹125 Cr +92% but below street; revenue ₹24,138 Cr +78% and EBITDA beat",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "GRASIM": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹50,105 Cr +26%, PAT ₹1,029 Cr −31% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "GUFICBIO": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹288 Cr +22%, PAT ₹23 Cr +35% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "HDFCBANK": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹95,132 Cr +9%, PAT ₹21,537 Cr +6% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "IDEAFORGE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹91 Cr +124%; PAT ₹6.5 Cr vs −₹19.6 Cr loss",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "INDIGO": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Net loss ₹1,879 Cr (vs −₹2,582 Cr); loss wider than estimates on fuel + ₹1,333 Cr forex hit",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "INOXINDIA": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹456 Cr +27%, PAT ₹67 Cr +10% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "INTELLECT": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹847 Cr +12%, PAT ₹104 Cr +2% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "ITC": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹20,269 Cr +4%, PAT ₹4,229 Cr −18% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "IXIGO": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹321 Cr +13%, PAT ₹63 Cr vs loss ₹3.0 Cr YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "KAJARIACER": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹1,468 Cr +24%, PAT ₹191 Cr +43% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "KOTAKBANK": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "PAT ₹5,645 Cr +26% YoY, revenue +15%",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "LALPATHLAB": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹874 Cr +20%, PAT ₹194 Cr +28% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "LINDEINDIA": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹723 Cr +12%, PAT ₹119 Cr −30% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "LTTS": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹3,040 Cr +12%; PAT ₹548 Cr +67% (+16.5% ex ₹165 Cr one-off), beat consensus",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "MANIPALHOS": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹3,399 Cr +37%, PAT ₹285 Cr −10% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "MARICO": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹3,897 Cr +13%, EBITDA +27%, PAT ₹558 Cr +29% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "MARUTI": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹53,356 Cr +26%, PAT ₹2,466 Cr −26% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "METROPOLIS": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹497 Cr +16%, PAT ₹75 Cr +42% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "MOTILALOFS": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹3,042 Cr +64%, PAT ₹1,081 Cr +198% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "NSE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹4,067 Cr +11% YoY, PAT ₹2,578 Cr +23% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "PHOENIXLTD": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹1,153 Cr +3%, PAT ₹427 Cr +11% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "POWERGRID": {
+  "quarter": "Q2 FY27",
+  "verdict": "In-line",
+  "text": "Rev ₹11,816 Cr +3%, PAT ₹3,866 Cr +8% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "PRESTIGE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹2,060 Cr −15%, PAT ₹256 Cr −44% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "PTCIL": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹224.32 Cr +80%, EBITDA ₹56.30 Cr +119%, PAT ₹33.28 Cr +83% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "PVRINOX": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹2,105 Cr +17%, PAT ₹263 Cr +148% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "RELIANCE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹3,30,601 Cr +30%, EBITDA +23%, PAT ₹29,550 Cr +34% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "THOMASCOOK": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹1,944 Cr −6%, PAT ₹54 Cr −24% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "TITAGARH": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹793 Cr −1%, PAT ₹63 Cr +70% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "TVSMOTOR": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹19,474 Cr +39%, PAT ₹1,219 Cr +46% YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "ZETWERK": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹4,599 Cr +18%; net loss widened to ₹88 Cr from ₹62 Cr YoY",
+  "checked": "2026-11-15",
+  "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ }
+}

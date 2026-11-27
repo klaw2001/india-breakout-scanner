@@ -1,0 +1,2 @@
+- LiberationSans-*.ttf, LiberationSerif-Regular.ttf: Liberation Fonts, SIL Open Font License 1.1 (metric-compatible with Arimo/Arial).
+- IBSSym-*.ttf: glyph subset (₹, ✓, arrows) of DejaVu Sans, Bitstream Vera / DejaVu license (free to use, modify and redistribute).

@@ -10,7 +10,7 @@ echo "Repo: $REPO"
 
 echo "1/5 Python 3.10+, venv, git"
 if ! need git || ! python3 -c "import ensurepip" 2>/dev/null; then
-  if need apt-get; then echo "    installing python3-venv, pip, git (quiet, 1-3 min)..."; $SUDO apt-get update -qq && DEBIAN_FRONTEND=noninteractive $SUDO apt-get install -y -qq python3-venv python3-pip git >/dev/null
+  if need apt-get; then echo "    installing python3-venv, pip, git (quiet, 1-3 min)..."; $SUDO apt-get update -qq && $SUDO env DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a apt-get install -y -qq python3-venv python3-pip git >/dev/null
   elif need dnf; then $SUDO dnf install -y -q python3 python3-pip git
   elif need yum; then $SUDO yum install -y -q python3 python3-pip git
   else echo "Install python3 (3.10+), its venv module and git, then run this again."; exit 1; fi

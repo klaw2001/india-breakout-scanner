@@ -24,5 +24,5 @@ python -m scanner.scan --scans swing && python -m report.render --scan swing
 Scanner output, not investment advice.
 
 ## Paper trading
-`paper/` trades the intraday watchlist on paper from an Oracle Cloud server, on 15-minute candle closes.
+`paper/` trades the intraday watchlist on paper from an always-on Linux server, on 15-minute candle closes.
 Setup, rules and commands: [paper/README.md](paper/README.md). Replay a past session: Actions → "Paper replay".

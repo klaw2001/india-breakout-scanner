@@ -92,6 +92,29 @@ def analyse(df, cfg, is_index):
     return rec
 
 
+def official_bar(df, bhav, sym, session):
+    """Make the session bar match the NSE bhavcopy: overwrite it if Yahoo has it, append it if Yahoo
+    is missing it (Yahoo sometimes drops the previous day's NSE bar). Returns (df, 'patched'|'filled'|None)."""
+    if sym not in bhav.index:
+        return df, None
+    b = bhav.loc[sym]
+    vals = [b.get(c) for c in ("OPEN_PRICE", "HIGH_PRICE", "LOW_PRICE", "CLOSE_PRICE", "TTL_TRD_QNTY")]
+    if any(v is None or v != v or v <= 0 for v in vals[:4]):
+        return df, None
+    vol = vals[4] if vals[4] == vals[4] and vals[4] else 0.0
+    row = [float(v) for v in vals[:4]] + [float(vol)]
+    ts = pd.Timestamp(session)
+    last = df.index[-1].normalize()
+    if last == ts:
+        df = df.copy()
+        df.loc[df.index[-1], ["Open", "High", "Low", "Close", "Volume"]] = row
+        return df, "patched"
+    if last < ts:
+        add = pd.DataFrame([row], columns=["Open", "High", "Low", "Close", "Volume"], index=[ts])
+        return pd.concat([df, add]), "filled"
+    return df, None
+
+
 def session_label(d):
     return d.strftime("%-d %b %Y (%a)")
 
@@ -124,7 +147,7 @@ def run(name, asof=None):
     bhav = prices.bhavcopy(session, log, wait=after_close_today and name != "intraday")
 
     rows, counts = [], {k: 0 for k in ("above", "on", "near1", "near2", "far", "extended")}
-    stale = illiquid = nodata = errors = 0
+    stale = illiquid = nodata = errors = filled = 0
     vol_confirmed_above = 0
 
     for t in list(tick) + list(idx):
@@ -133,6 +156,10 @@ def run(name, asof=None):
         if df is None:
             nodata += 1
             continue
+        if not is_index and bhav is not None:
+            df, how = official_bar(df, bhav, tick[t][0], session)
+            if how == "filled":
+                filled += 1
         if df.index[-1].date() != session:
             stale += 1
             if stale <= 5:
@@ -144,13 +171,6 @@ def run(name, asof=None):
         else:
             sym, disp = tick[t]
             code = f"NSE:{sym}"
-            if bhav is not None and sym in bhav.index:
-                b = bhav.loc[sym]
-                if b.get("CLOSE_PRICE") and b["CLOSE_PRICE"] > 0:
-                    df = df.copy()
-                    df.iloc[-1, df.columns.get_loc("Close")] = float(b["CLOSE_PRICE"])
-                    if b.get("TTL_TRD_QNTY") and b["TTL_TRD_QNTY"] > 0:
-                        df.iloc[-1, df.columns.get_loc("Volume")] = float(b["TTL_TRD_QNTY"])
             if cfg.get("min_turnover_cr"):
                 tv = (df["Close"].iloc[-20:] * df["Volume"].iloc[-20:]).mean() / 1e7
                 if not tv or tv < cfg["min_turnover_cr"]:
@@ -193,6 +213,7 @@ def run(name, asof=None):
         generated_ist=now_ist.strftime("%d %b %Y %H:%M IST"),
         universe=cfg["universe"], universe_size=len(tick), indices=len(idx),
         scanned=sum(counts.values()), stale=stale, illiquid=illiquid, nodata=nodata, errors=errors,
+        filled_from_bhavcopy=filled,
         counts=counts, vol_confirmed_above=vol_confirmed_above,
         bhavcopy=bhav is not None,
         params={k: cfg[k] for k in ("bands", "on_tol", "max_ext", "vol_min", "vol_avg", "tf_word",
@@ -212,7 +233,7 @@ def run(name, asof=None):
     (out_dir / "status.json").write_text(json.dumps(dict(ok=True, scan=name, session_date=str(session),
                                                          generated_at=meta["generated_at"]), indent=1))
     print(f"[{name}] session {session}: listed {len(rows)} | counts {counts} | stale {stale} "
-          f"illiquid {illiquid} nodata {nodata} errors {errors} | bhavcopy {bhav is not None}")
+          f"illiquid {illiquid} nodata {nodata} errors {errors} | bhavcopy {bhav is not None} filled {filled}")
     return doc
 
 

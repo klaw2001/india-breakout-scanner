@@ -5,25 +5,26 @@
   "short": "Swing",
   "session_date": "2026-11-26",
   "session_label": "26 Nov 2026 (Thu)",
-  "generated_at": "2026-11-27T06:43:32Z",
-  "generated_ist": "27 Nov 2026 12:13 IST",
+  "generated_at": "2026-11-27T06:51:29Z",
+  "generated_ist": "27 Nov 2026 12:21 IST",
   "universe": "nifty500",
   "universe_size": 501,
   "indices": 12,
-  "scanned": 322,
-  "stale": 189,
+  "scanned": 509,
+  "stale": 2,
   "illiquid": 0,
   "nodata": 2,
   "errors": 0,
+  "filled_from_bhavcopy": 187,
   "counts": {
-   "above": 48,
-   "on": 8,
-   "near1": 21,
-   "near2": 13,
-   "far": 222,
-   "extended": 10
+   "above": 80,
+   "on": 10,
+   "near1": 33,
+   "near2": 19,
+   "far": 354,
+   "extended": 13
   },
-  "vol_confirmed_above": 29,
+  "vol_confirmed_above": 44,
   "bhavcopy": true,
   "params": {
    "bands": [
@@ -48,11 +49,8 @@
    "as-of mode: bars after 2026-11-26 dropped",
    "yahoo: 511 of 513 tickers returned data",
    "bhavcopy 2026-11-26: 2992 rows from nsearchives.nseindia.com",
-   "stale AIAENG.NS: last bar 2026-11-25 00:00:00",
-   "stale AADHARHFC.NS: last bar 2026-11-25 00:00:00",
-   "stale AAVAS.NS: last bar 2026-11-25 00:00:00",
-   "stale ABBOTINDIA.NS: last bar 2026-11-25 00:00:00",
-   "stale ACE.NS: last bar 2026-11-25 00:00:00"
+   "stale BIRET.NS: last bar 2026-11-25 00:00:00",
+   "stale EMBASSY.NS: last bar 2026-11-25 00:00:00"
   ]
  },
  "rows": [
@@ -84,6 +82,35 @@
    "ticker": "360ONE.NS",
    "index": false,
    "deliv": 59.86
+  },
+  {
+   "close": 27300.0,
+   "level": 27450.0,
+   "diff": -0.55,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-04",
+   "atr": 670.0,
+   "inv": 25400.0,
+   "target": 31550.0,
+   "vol_ratio": 1.23,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 27450.0,
+    "above": false
+   },
+   "m": {
+    "level": 28940.0,
+    "above": false
+   },
+   "symbol": "ABBOTINDIA",
+   "name": "Abbott India",
+   "code": "NSE:ABBOTINDIA",
+   "ticker": "ABBOTINDIA.NS",
+   "index": false,
+   "deliv": 47.76
   },
   {
    "close": 1263.6,
@@ -142,6 +169,35 @@
    "ticker": "ACMESOLAR.NS",
    "index": false,
    "deliv": 58.2
+  },
+  {
+   "close": 1295.0,
+   "level": 1268.0,
+   "diff": 2.13,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-09-21",
+   "atr": 44.94,
+   "inv": 1156.2,
+   "target": 1491.6,
+   "vol_ratio": 9.78,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 1268.0,
+    "above": true
+   },
+   "m": {
+    "level": 1389.0,
+    "above": false
+   },
+   "symbol": "ACE",
+   "name": "Action Construction Equipment",
+   "code": "NSE:ACE",
+   "ticker": "ACE.NS",
+   "index": false,
+   "deliv": 19.57
   },
   {
    "close": 4079.9,
@@ -231,6 +287,93 @@
    "deliv": 40.05
   },
   {
+   "close": 223.22,
+   "level": 224.97,
+   "diff": -0.78,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-05",
+   "atr": 7.75,
+   "inv": 203.6,
+   "target": 267.71,
+   "vol_ratio": 0.42,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 304.55,
+    "above": false
+   },
+   "m": {
+    "level": 366.0,
+    "above": false
+   },
+   "symbol": "AFCONS",
+   "name": "Afcons Infrastructure",
+   "code": "NSE:AFCONS",
+   "ticker": "AFCONS.NS",
+   "index": false,
+   "deliv": 45.43
+  },
+  {
+   "close": 1627.7,
+   "level": 1654.5,
+   "diff": -1.62,
+   "group": "near2",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-09-07",
+   "atr": 42.46,
+   "inv": 1535.1,
+   "target": 1893.3,
+   "vol_ratio": 0.22,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1658.0,
+    "above": false
+   },
+   "m": {
+    "level": 1686.0,
+    "above": false
+   },
+   "symbol": "AFFLE",
+   "name": "Affle 3i",
+   "code": "NSE:AFFLE",
+   "ticker": "AFFLE.NS",
+   "index": false,
+   "deliv": 53.88
+  },
+  {
+   "close": 2410.0,
+   "level": 2410.0,
+   "diff": 0.0,
+   "group": "on",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-13",
+   "atr": 35.1,
+   "inv": 2344.3,
+   "target": 2541.4,
+   "vol_ratio": 2.98,
+   "vol_on": "last bar",
+   "vol_ok": true,
+   "w": {
+    "level": 2268.4,
+    "above": true
+   },
+   "m": {
+    "level": 1660.7,
+    "above": true
+   },
+   "symbol": "ANANDRATHI",
+   "name": "Anand Rathi Wealth",
+   "code": "NSE:ANANDRATHI",
+   "ticker": "ANANDRATHI.NS",
+   "index": false,
+   "deliv": 59.83
+  },
+  {
    "close": 358.0,
    "level": 356.75,
    "diff": 0.35,
@@ -289,6 +432,35 @@
    "deliv": 51.95
   },
   {
+   "close": 9222.5,
+   "level": 9070.5,
+   "diff": 1.68,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-09-23",
+   "atr": 207.39,
+   "inv": 8252.0,
+   "target": 10707.5,
+   "vol_ratio": 2.68,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 9070.5,
+    "above": true
+   },
+   "m": {
+    "level": 8099.5,
+    "above": true
+   },
+   "symbol": "APOLLOHOSP",
+   "name": "Apollo Hospitals Enterprise",
+   "code": "NSE:APOLLOHOSP",
+   "ticker": "APOLLOHOSP.NS",
+   "index": false,
+   "deliv": 56.09
+  },
+  {
    "close": 768.3,
    "level": 757.45,
    "diff": 1.43,
@@ -318,6 +490,35 @@
    "deliv": 39.83
   },
   {
+   "close": 3533.0,
+   "level": 3484.1,
+   "diff": 1.4,
+   "group": "above",
+   "days": 5,
+   "kind": "fresh",
+   "level_date": "2026-11-11",
+   "atr": 65.76,
+   "inv": 3427.0,
+   "target": 3598.3,
+   "vol_ratio": 0.52,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 3880.0,
+    "above": false
+   },
+   "m": {
+    "level": 4644.0,
+    "above": false
+   },
+   "symbol": "DMART",
+   "name": "Avenue Supermarts",
+   "code": "NSE:DMART",
+   "ticker": "DMART.NS",
+   "index": false,
+   "deliv": 40.91
+  },
+  {
    "close": 1408.0,
    "level": 1400.1,
    "diff": 0.56,
@@ -345,6 +546,35 @@
    "ticker": "AXISBANK.NS",
    "index": false,
    "deliv": 54.39
+  },
+  {
+   "close": 11933.0,
+   "level": 11644.0,
+   "diff": 2.48,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-08-31",
+   "atr": 354.5,
+   "inv": 11050.0,
+   "target": 12832.0,
+   "vol_ratio": 1.5,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 11660.0,
+    "above": true
+   },
+   "m": {
+    "level": 11644.0,
+    "above": true
+   },
+   "symbol": "BAJAJHLDNG",
+   "name": "Bajaj Holdings & Investment",
+   "code": "NSE:BAJAJHLDNG",
+   "ticker": "BAJAJHLDNG.NS",
+   "index": false,
+   "deliv": 46.56
   },
   {
    "close": 94.2,
@@ -463,6 +693,35 @@
    "deliv": 34.1
   },
   {
+   "close": 5185.0,
+   "level": 5098.3,
+   "diff": 1.7,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-11-06",
+   "atr": 139.98,
+   "inv": 4673.2,
+   "target": 5948.5,
+   "vol_ratio": 2.71,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 5098.3,
+    "above": true
+   },
+   "m": {
+    "level": 5689.5,
+    "above": false
+   },
+   "symbol": "BRITANNIA",
+   "name": "Britannia Industries",
+   "code": "NSE:BRITANNIA",
+   "ticker": "BRITANNIA.NS",
+   "index": false,
+   "deliv": 56.54
+  },
+  {
    "close": 3990.4,
    "level": 4003.3,
    "diff": -0.32,
@@ -550,6 +809,35 @@
    "deliv": 29.99
   },
   {
+   "close": 1425.0,
+   "level": 1414.3,
+   "diff": 0.76,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-11-05",
+   "atr": 59.86,
+   "inv": 1282.0,
+   "target": 1678.9,
+   "vol_ratio": 0.79,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1649.2,
+    "above": false
+   },
+   "m": {
+    "level": 1649.2,
+    "above": false
+   },
+   "symbol": "CEMPRO",
+   "name": "Cemindia Projects",
+   "code": "NSE:CEMPRO",
+   "ticker": "CEMPRO.NS",
+   "index": false,
+   "deliv": 36.82
+  },
+  {
    "close": 33.02,
    "level": 32.78,
    "diff": 0.73,
@@ -577,6 +865,64 @@
    "ticker": "CENTRALBK.NS",
    "index": false,
    "deliv": 43.78
+  },
+  {
+   "close": 760.7,
+   "level": 765.15,
+   "diff": -0.58,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-05",
+   "atr": 16.96,
+   "inv": 709.5,
+   "target": 876.45,
+   "vol_ratio": 1.38,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 765.15,
+    "above": false
+   },
+   "m": {
+    "level": 854.3,
+    "above": false
+   },
+   "symbol": "CHOICEIN",
+   "name": "Choice International",
+   "code": "NSE:CHOICEIN",
+   "ticker": "CHOICEIN.NS",
+   "index": false,
+   "deliv": 16.88
+  },
+  {
+   "close": 1450.0,
+   "level": 1435.0,
+   "diff": 1.05,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-11-18",
+   "atr": 27.51,
+   "inv": 1381.3,
+   "target": 1542.4,
+   "vol_ratio": 1.15,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1490.1,
+    "above": false
+   },
+   "m": {
+    "level": 1491.2,
+    "above": false
+   },
+   "symbol": "CIPLA",
+   "name": "Cipla",
+   "code": "NSE:CIPLA",
+   "ticker": "CIPLA.NS",
+   "index": false,
+   "deliv": 48.1
   },
   {
    "close": 239.0,
@@ -637,6 +983,64 @@
    "deliv": 29.4
   },
   {
+   "close": 1800.0,
+   "level": 1758.6,
+   "diff": 2.35,
+   "group": "above",
+   "days": 5,
+   "kind": "fresh",
+   "level_date": "2026-11-12",
+   "atr": 42.56,
+   "inv": 1680.8,
+   "target": 1914.2,
+   "vol_ratio": 1.33,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1917.8,
+    "above": false
+   },
+   "m": {
+    "level": 2301.6,
+    "above": false
+   },
+   "symbol": "COLPAL",
+   "name": "Colgate Palmolive (India)",
+   "code": "NSE:COLPAL",
+   "ticker": "COLPAL.NS",
+   "index": false,
+   "deliv": 44.2
+  },
+  {
+   "close": 11860.0,
+   "level": 11353.0,
+   "diff": 4.47,
+   "group": "above",
+   "days": 5,
+   "kind": "fresh",
+   "level_date": "2026-10-21",
+   "atr": 450.71,
+   "inv": 10130.0,
+   "target": 13799.0,
+   "vol_ratio": 1.86,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 11353.0,
+    "above": true
+   },
+   "m": {
+    "level": 8220.0,
+    "above": true
+   },
+   "symbol": "CRAFTSMAN",
+   "name": "Craftsman Automation",
+   "code": "NSE:CRAFTSMAN",
+   "ticker": "CRAFTSMAN.NS",
+   "index": false,
+   "deliv": 48.1
+  },
+  {
    "close": 418.5,
    "level": 402.85,
    "diff": 3.88,
@@ -693,6 +1097,35 @@
    "ticker": "DELHIVERY.NS",
    "index": false,
    "deliv": 45.26
+  },
+  {
+   "close": 11631.0,
+   "level": 11824.0,
+   "diff": -1.63,
+   "group": "near2",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-09",
+   "atr": 389.04,
+   "inv": 10954.0,
+   "target": 13564.0,
+   "vol_ratio": 0.6,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 9740.0,
+    "above": true
+   },
+   "m": {
+    "level": 7071.5,
+    "above": true
+   },
+   "symbol": "DIVISLAB",
+   "name": "Divi's Laboratories",
+   "code": "NSE:DIVISLAB",
+   "ticker": "DIVISLAB.NS",
+   "index": false,
+   "deliv": 50.22
   },
   {
    "close": 2299.5,
@@ -782,6 +1215,93 @@
    "deliv": 60.4
   },
   {
+   "close": 661.7,
+   "level": 674.9,
+   "diff": -1.96,
+   "group": "near2",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-13",
+   "atr": 16.19,
+   "inv": 594.35,
+   "target": 836.0,
+   "vol_ratio": 1.58,
+   "vol_on": "last bar",
+   "vol_ok": true,
+   "w": {
+    "level": 717.45,
+    "above": false
+   },
+   "m": {
+    "level": 865.4,
+    "above": false
+   },
+   "symbol": "EIDPARRY",
+   "name": "E.I.D. Parry (India)",
+   "code": "NSE:EIDPARRY",
+   "ticker": "EIDPARRY.NS",
+   "index": false,
+   "deliv": 33.63
+  },
+  {
+   "close": 8180.0,
+   "level": 8165.0,
+   "diff": 0.18,
+   "group": "above",
+   "days": 3,
+   "kind": "fresh",
+   "level_date": "2026-08-17",
+   "atr": 231.96,
+   "inv": 7451.5,
+   "target": 9592.0,
+   "vol_ratio": 1.32,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 8165.0,
+    "above": true
+   },
+   "m": {
+    "level": 8165.0,
+    "above": true
+   },
+   "symbol": "EICHERMOT",
+   "name": "Eicher Motors",
+   "code": "NSE:EICHERMOT",
+   "ticker": "EICHERMOT.NS",
+   "index": false,
+   "deliv": 58.0
+  },
+  {
+   "close": 332.7,
+   "level": 326.0,
+   "diff": 2.06,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-11-13",
+   "atr": 11.6,
+   "inv": 303.3,
+   "target": 371.4,
+   "vol_ratio": 17.42,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 321.15,
+    "above": true
+   },
+   "m": {
+    "level": 352.75,
+    "above": false
+   },
+   "symbol": "EIHOTEL",
+   "name": "EIH",
+   "code": "NSE:EIHOTEL",
+   "ticker": "EIHOTEL.NS",
+   "index": false,
+   "deliv": 42.39
+  },
+  {
    "close": 421.7,
    "level": 419.6,
    "diff": 0.5,
@@ -809,6 +1329,64 @@
    "ticker": "EMAMILTD.NS",
    "index": false,
    "deliv": 50.76
+  },
+  {
+   "close": 2696.8,
+   "level": 2580.0,
+   "diff": 4.53,
+   "group": "above",
+   "days": 5,
+   "kind": "fresh",
+   "level_date": "2026-11-05",
+   "atr": 78.93,
+   "inv": 2453.0,
+   "target": 2834.0,
+   "vol_ratio": 2.66,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 3072.0,
+    "above": false
+   },
+   "m": {
+    "level": 3061.3,
+    "above": false
+   },
+   "symbol": "ENDURANCE",
+   "name": "Endurance Technologies",
+   "code": "NSE:ENDURANCE",
+   "ticker": "ENDURANCE.NS",
+   "index": false,
+   "deliv": 51.08
+  },
+  {
+   "close": 20362.0,
+   "level": 20478.0,
+   "diff": -0.57,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-12",
+   "atr": 708.86,
+   "inv": 16184.0,
+   "target": 29066.0,
+   "vol_ratio": 0.54,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 19604.0,
+    "above": true
+   },
+   "m": {
+    "level": 26450.0,
+    "above": false
+   },
+   "symbol": "FORCEMOT",
+   "name": "Force Motors",
+   "code": "NSE:FORCEMOT",
+   "ticker": "FORCEMOT.NS",
+   "index": false,
+   "deliv": 24.88
   },
   {
    "close": 825.9,
@@ -869,6 +1447,64 @@
    "deliv": 56.05
   },
   {
+   "close": 2779.8,
+   "level": 2770.0,
+   "diff": 0.35,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-11-11",
+   "atr": 87.34,
+   "inv": 2595.9,
+   "target": 3118.2,
+   "vol_ratio": 0.82,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 3120.7,
+    "above": false
+   },
+   "m": {
+    "level": 3120.7,
+    "above": false
+   },
+   "symbol": "GLAXO",
+   "name": "Glaxosmithkline Pharmaceuticals",
+   "code": "NSE:GLAXO",
+   "ticker": "GLAXO.NS",
+   "index": false,
+   "deliv": 59.05
+  },
+  {
+   "close": 2740.2,
+   "level": 2714.0,
+   "diff": 0.97,
+   "group": "above",
+   "days": 2,
+   "kind": "fresh",
+   "level_date": "2026-11-09",
+   "atr": 84.26,
+   "inv": 2600.2,
+   "target": 2941.6,
+   "vol_ratio": 0.9,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 2537.6,
+    "above": true
+   },
+   "m": {
+    "level": 2537.6,
+    "above": true
+   },
+   "symbol": "GLENMARK",
+   "name": "Glenmark Pharmaceuticals",
+   "code": "NSE:GLENMARK",
+   "ticker": "GLENMARK.NS",
+   "index": false,
+   "deliv": 36.78
+  },
+  {
    "close": 947.5,
    "level": 948.0,
    "diff": -0.05,
@@ -896,6 +1532,35 @@
    "ticker": "GODREJCP.NS",
    "index": false,
    "deliv": 49.02
+  },
+  {
+   "close": 833.15,
+   "level": 847.0,
+   "diff": -1.64,
+   "group": "near2",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-12",
+   "atr": 31.57,
+   "inv": 788.45,
+   "target": 964.1,
+   "vol_ratio": 0.41,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 859.7,
+    "above": false
+   },
+   "m": {
+    "level": 721.0,
+    "above": true
+   },
+   "symbol": "GRANULES",
+   "name": "Granules India",
+   "code": "NSE:GRANULES",
+   "ticker": "GRANULES.NS",
+   "index": false,
+   "deliv": 39.65
   },
   {
    "close": 791.75,
@@ -985,6 +1650,35 @@
    "deliv": 35.85
   },
   {
+   "close": 2725.1,
+   "level": 2766.5,
+   "diff": -1.5,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-12",
+   "atr": 82.29,
+   "inv": 2611.0,
+   "target": 3077.5,
+   "vol_ratio": 0.79,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 2698.0,
+    "above": true
+   },
+   "m": {
+    "level": 2872.4,
+    "above": false
+   },
+   "symbol": "HDFCAMC",
+   "name": "HDFC Asset Management Company",
+   "code": "NSE:HDFCAMC",
+   "ticker": "HDFCAMC.NS",
+   "index": false,
+   "deliv": 47.15
+  },
+  {
    "close": 862.0,
    "level": 843.0,
    "diff": 2.25,
@@ -1072,6 +1766,64 @@
    "deliv": 53.03
   },
   {
+   "close": 2130.8,
+   "level": 2051.9,
+   "diff": 3.85,
+   "group": "above",
+   "days": 5,
+   "kind": "fresh",
+   "level_date": "2026-08-26",
+   "atr": 48.09,
+   "inv": 1961.0,
+   "target": 2233.7,
+   "vol_ratio": 1.83,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 2239.3,
+    "above": false
+   },
+   "m": {
+    "level": 2750.0,
+    "above": false
+   },
+   "symbol": "HINDUNILVR",
+   "name": "Hindustan Unilever",
+   "code": "NSE:HINDUNILVR",
+   "ticker": "HINDUNILVR.NS",
+   "index": false,
+   "deliv": 51.83
+  },
+  {
+   "close": 533.25,
+   "level": 509.8,
+   "diff": 4.6,
+   "group": "above",
+   "days": 7,
+   "kind": "held",
+   "level_date": "2026-08-14",
+   "atr": 20.36,
+   "inv": 435.2,
+   "target": 659.0,
+   "vol_ratio": 1.96,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 509.8,
+    "above": true
+   },
+   "m": {
+    "level": 511.0,
+    "above": true
+   },
+   "symbol": "HONASA",
+   "name": "Honasa Consumer",
+   "code": "NSE:HONASA",
+   "ticker": "HONASA.NS",
+   "index": false,
+   "deliv": 52.74
+  },
+  {
    "close": 1611.0,
    "level": 1616.0,
    "diff": -0.31,
@@ -1099,6 +1851,35 @@
    "ticker": "ICICIBANK.NS",
    "index": false,
    "deliv": 63.49
+  },
+  {
+   "close": 1740.0,
+   "level": 1731.0,
+   "diff": 0.52,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-11-12",
+   "atr": 40.53,
+   "inv": 1645.2,
+   "target": 1902.6,
+   "vol_ratio": 1.63,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 1786.0,
+    "above": false
+   },
+   "m": {
+    "level": 2064.9,
+    "above": false
+   },
+   "symbol": "ICICIGI",
+   "name": "ICICI Lombard General Insurance Company",
+   "code": "NSE:ICICIGI",
+   "ticker": "ICICIGI.NS",
+   "index": false,
+   "deliv": 63.42
   },
   {
    "close": 86.71,
@@ -1275,6 +2056,35 @@
    "deliv": 51.52
   },
   {
+   "close": 5625.0,
+   "level": 5713.0,
+   "diff": -1.54,
+   "group": "near2",
+   "days": 0,
+   "kind": "lost",
+   "level_date": "2026-11-11",
+   "atr": 163.09,
+   "inv": 4464.4,
+   "target": 8210.2,
+   "vol_ratio": 0.67,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 5970.0,
+    "above": false
+   },
+   "m": {
+    "level": 5508.0,
+    "above": true
+   },
+   "symbol": "INDIGO",
+   "name": "InterGlobe Aviation",
+   "code": "NSE:INDIGO",
+   "ticker": "INDIGO.NS",
+   "index": false,
+   "deliv": 56.1
+  },
+  {
    "close": 307.0,
    "level": 294.55,
    "diff": 4.23,
@@ -1331,6 +2141,64 @@
    "ticker": "ITCHOTELS.NS",
    "index": false,
    "deliv": 61.16
+  },
+  {
+   "close": 5463.8,
+   "level": 5352.2,
+   "diff": 2.09,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-11-12",
+   "atr": 179.16,
+   "inv": 5029.9,
+   "target": 5996.8,
+   "vol_ratio": 2.59,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 5730.0,
+    "above": false
+   },
+   "m": {
+    "level": 5790.0,
+    "above": false
+   },
+   "symbol": "JKCEMENT",
+   "name": "J.K. Cement",
+   "code": "NSE:JKCEMENT",
+   "ticker": "JKCEMENT.NS",
+   "index": false,
+   "deliv": 48.02
+  },
+  {
+   "close": 125.55,
+   "level": 127.15,
+   "diff": -1.26,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-06",
+   "atr": 3.05,
+   "inv": 122.85,
+   "target": 135.75,
+   "vol_ratio": 0.17,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 127.15,
+    "above": false
+   },
+   "m": {
+    "level": 143.4,
+    "above": false
+   },
+   "symbol": "JSWCEMENT",
+   "name": "JSW Cement",
+   "code": "NSE:JSWCEMENT",
+   "ticker": "JSWCEMENT.NS",
+   "index": false,
+   "deliv": 46.17
   },
   {
    "close": 365.65,
@@ -1391,6 +2259,180 @@
    "deliv": 4.25
   },
   {
+   "close": 1223.4,
+   "level": 1220.1,
+   "diff": 0.27,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-11-19",
+   "atr": 33.27,
+   "inv": 1155.6,
+   "target": 1349.1,
+   "vol_ratio": 0.82,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1265.9,
+    "above": false
+   },
+   "m": {
+    "level": 1246.8,
+    "above": false
+   },
+   "symbol": "KAJARIACER",
+   "name": "Kajaria Ceramics",
+   "code": "NSE:KAJARIACER",
+   "ticker": "KAJARIACER.NS",
+   "index": false,
+   "deliv": 67.87
+  },
+  {
+   "close": 995.0,
+   "level": 992.4,
+   "diff": 0.26,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-08-21",
+   "atr": 31.84,
+   "inv": 784.0,
+   "target": 1409.2,
+   "vol_ratio": 3.81,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 992.4,
+    "above": true
+   },
+   "m": {
+    "level": 992.4,
+    "above": true
+   },
+   "symbol": "KFINTECH",
+   "name": "Kfin Technologies",
+   "code": "NSE:KFINTECH",
+   "ticker": "KFINTECH.NS",
+   "index": false,
+   "deliv": 29.41
+  },
+  {
+   "close": 4245.2,
+   "level": 4316.9,
+   "diff": -1.66,
+   "group": "near2",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-12",
+   "atr": 113.49,
+   "inv": 4001.0,
+   "target": 4948.7,
+   "vol_ratio": 0.77,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 4347.4,
+    "above": false
+   },
+   "m": {
+    "level": 4726.0,
+    "above": false
+   },
+   "symbol": "LTTS",
+   "name": "L&T Technology Services",
+   "code": "NSE:LTTS",
+   "ticker": "LTTS.NS",
+   "index": false,
+   "deliv": 57.82
+  },
+  {
+   "close": 2505.0,
+   "level": 2488.0,
+   "diff": 0.68,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-11-11",
+   "atr": 84.82,
+   "inv": 2190.0,
+   "target": 3084.0,
+   "vol_ratio": 1.01,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1141.0,
+    "above": true
+   },
+   "m": {
+    "level": 1141.0,
+    "above": true
+   },
+   "symbol": "LAURUSLABS",
+   "name": "Laurus Labs",
+   "code": "NSE:LAURUSLABS",
+   "ticker": "LAURUSLABS.NS",
+   "index": false,
+   "deliv": 52.52
+  },
+  {
+   "close": 123.35,
+   "level": 122.65,
+   "diff": 0.57,
+   "group": "above",
+   "days": 8,
+   "kind": "held",
+   "level_date": "2026-07-07",
+   "atr": 3.79,
+   "inv": 114.8,
+   "target": 138.35,
+   "vol_ratio": 1.42,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 122.65,
+    "above": true
+   },
+   "m": {
+    "level": 180.68,
+    "above": false
+   },
+   "symbol": "LEMONTREE",
+   "name": "Lemon Tree Hotels",
+   "code": "NSE:LEMONTREE",
+   "ticker": "LEMONTREE.NS",
+   "index": false,
+   "deliv": 73.39
+  },
+  {
+   "close": 596.25,
+   "level": 579.4,
+   "diff": 2.91,
+   "group": "above",
+   "days": 9,
+   "kind": "held",
+   "level_date": "2026-09-04",
+   "atr": 19.56,
+   "inv": 493.65,
+   "target": 750.9,
+   "vol_ratio": 1.46,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 598.2,
+    "above": false
+   },
+   "m": {
+    "level": 598.2,
+    "above": false
+   },
+   "symbol": "LICHSGFIN",
+   "name": "LIC Housing Finance",
+   "code": "NSE:LICHSGFIN",
+   "ticker": "LICHSGFIN.NS",
+   "index": false,
+   "deliv": 49.21
+  },
+  {
    "close": 410.0,
    "level": 417.35,
    "diff": -1.76,
@@ -1418,6 +2460,35 @@
    "ticker": "LICI.NS",
    "index": false,
    "deliv": 61.3
+  },
+  {
+   "close": 6998.5,
+   "level": 7009.5,
+   "diff": -0.16,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-17",
+   "atr": 270.68,
+   "inv": 5544.0,
+   "target": 9940.5,
+   "vol_ratio": 0.78,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 7090.0,
+    "above": false
+   },
+   "m": {
+    "level": 7870.0,
+    "above": false
+   },
+   "symbol": "LINDEINDIA",
+   "name": "Linde India",
+   "code": "NSE:LINDEINDIA",
+   "ticker": "LINDEINDIA.NS",
+   "index": false,
+   "deliv": 58.19
   },
   {
    "close": 1261.2,
@@ -1505,6 +2576,64 @@
    "ticker": "M&M.NS",
    "index": false,
    "deliv": 51.01
+  },
+  {
+   "close": 2685.0,
+   "level": 2705.0,
+   "diff": -0.74,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-09",
+   "atr": 62.37,
+   "inv": 2584.0,
+   "target": 2947.0,
+   "vol_ratio": 0.41,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 2642.0,
+    "above": true
+   },
+   "m": {
+    "level": 2642.2,
+    "above": true
+   },
+   "symbol": "MANKIND",
+   "name": "Mankind Pharma",
+   "code": "NSE:MANKIND",
+   "ticker": "MANKIND.NS",
+   "index": false,
+   "deliv": 53.88
+  },
+  {
+   "close": 939.1,
+   "level": 925.0,
+   "diff": 1.52,
+   "group": "above",
+   "days": 2,
+   "kind": "fresh",
+   "level_date": "2026-11-11",
+   "atr": 16.69,
+   "inv": 756.85,
+   "target": 1261.3,
+   "vol_ratio": 0.8,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 889.1,
+    "above": true
+   },
+   "m": {
+    "level": 889.1,
+    "above": true
+   },
+   "symbol": "MARICO",
+   "name": "Marico",
+   "code": "NSE:MARICO",
+   "ticker": "MARICO.NS",
+   "index": false,
+   "deliv": 64.94
   },
   {
    "close": 1081.25,
@@ -1856,6 +2985,35 @@
    "index": true
   },
   {
+   "close": 359.5,
+   "level": 357.6,
+   "diff": 0.53,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-08-06",
+   "atr": 10.36,
+   "inv": 336.8,
+   "target": 399.2,
+   "vol_ratio": 42.77,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 354.8,
+    "above": true
+   },
+   "m": {
+    "level": 398.0,
+    "above": false
+   },
+   "symbol": "NUVOCO",
+   "name": "Nuvoco Vistas Corporation",
+   "code": "NSE:NUVOCO",
+   "ticker": "NUVOCO.NS",
+   "index": false,
+   "deliv": 44.9
+  },
+  {
    "close": 1905.2,
    "level": 1882.9,
    "diff": 1.18,
@@ -2001,6 +3159,93 @@
    "deliv": 31.13
   },
   {
+   "close": 1604.9,
+   "level": 1598.9,
+   "diff": 0.38,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-09-18",
+   "atr": 38.94,
+   "inv": 1516.0,
+   "target": 1764.7,
+   "vol_ratio": 1.25,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1707.5,
+    "above": false
+   },
+   "m": {
+    "level": 1707.5,
+    "above": false
+   },
+   "symbol": "PIDILITIND",
+   "name": "Pidilite Industries",
+   "code": "NSE:PIDILITIND",
+   "ticker": "PIDILITIND.NS",
+   "index": false,
+   "deliv": 70.4
+  },
+  {
+   "close": 1171.0,
+   "level": 1157.5,
+   "diff": 1.17,
+   "group": "above",
+   "days": 4,
+   "kind": "fresh",
+   "level_date": "2026-11-12",
+   "atr": 34.97,
+   "inv": 1052.7,
+   "target": 1367.1,
+   "vol_ratio": 1.07,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1211.5,
+    "above": false
+   },
+   "m": {
+    "level": 1202.2,
+    "above": false
+   },
+   "symbol": "PNBHOUSING",
+   "name": "PNB Housing Finance",
+   "code": "NSE:PNBHOUSING",
+   "ticker": "PNBHOUSING.NS",
+   "index": false,
+   "deliv": 43.93
+  },
+  {
+   "close": 508.6,
+   "level": 511.9,
+   "diff": -0.64,
+   "group": "near1",
+   "days": 0,
+   "kind": "lost",
+   "level_date": "2026-08-14",
+   "atr": 16.25,
+   "inv": 395.15,
+   "target": 745.4,
+   "vol_ratio": 0.41,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 503.8,
+    "above": true
+   },
+   "m": {
+    "level": 511.9,
+    "above": false
+   },
+   "symbol": "POONAWALLA",
+   "name": "Poonawalla Fincorp",
+   "code": "NSE:POONAWALLA",
+   "ticker": "POONAWALLA.NS",
+   "index": false,
+   "deliv": 47.08
+  },
+  {
    "close": 266.95,
    "level": 266.5,
    "diff": 0.17,
@@ -2028,6 +3273,35 @@
    "ticker": "POWERGRID.NS",
    "index": false,
    "deliv": 58.84
+  },
+  {
+   "close": 3643.9,
+   "level": 3575.0,
+   "diff": 1.93,
+   "group": "above",
+   "days": 3,
+   "kind": "fresh",
+   "level_date": "2026-10-29",
+   "atr": 118.42,
+   "inv": 3320.0,
+   "target": 4085.0,
+   "vol_ratio": 1.48,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 3705.0,
+    "above": false
+   },
+   "m": {
+    "level": 3785.3,
+    "above": false
+   },
+   "symbol": "PRIVISCL",
+   "name": "Privi Speciality Chemicals",
+   "code": "NSE:PRIVISCL",
+   "ticker": "PRIVISCL.NS",
+   "index": false,
+   "deliv": 48.47
   },
   {
    "close": 4671.0,
@@ -2088,6 +3362,35 @@
    "deliv": 47.11
   },
   {
+   "close": 1851.7,
+   "level": 1777.9,
+   "diff": 4.15,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-11-09",
+   "atr": 83.06,
+   "inv": 1640.0,
+   "target": 2053.7,
+   "vol_ratio": 2.59,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 1899.0,
+    "above": false
+   },
+   "m": {
+    "level": 1899.0,
+    "above": false
+   },
+   "symbol": "RUBICON",
+   "name": "Rubicon Research",
+   "code": "NSE:RUBICON",
+   "ticker": "RUBICON.NS",
+   "index": false,
+   "deliv": 41.65
+  },
+  {
    "close": 46.6,
    "level": 46.12,
    "diff": 1.04,
@@ -2117,6 +3420,64 @@
    "deliv": 54.09
   },
   {
+   "close": 479.95,
+   "level": 480.0,
+   "diff": -0.01,
+   "group": "on",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-19",
+   "atr": 14.65,
+   "inv": 436.75,
+   "target": 566.5,
+   "vol_ratio": 1.6,
+   "vol_on": "last bar",
+   "vol_ok": true,
+   "w": {
+    "level": 542.5,
+    "above": false
+   },
+   "m": {
+    "level": 624.0,
+    "above": false
+   },
+   "symbol": "SARDAEN",
+   "name": "Sarda Energy and Minerals",
+   "code": "NSE:SARDAEN",
+   "ticker": "SARDAEN.NS",
+   "index": false,
+   "deliv": 49.33
+  },
+  {
+   "close": 1842.3,
+   "level": 1834.6,
+   "diff": 0.42,
+   "group": "above",
+   "days": 1,
+   "kind": "fresh",
+   "level_date": "2026-11-17",
+   "atr": 46.21,
+   "inv": 1772.0,
+   "target": 1959.8,
+   "vol_ratio": 0.95,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1791.4,
+    "above": true
+   },
+   "m": {
+    "level": 1915.0,
+    "above": false
+   },
+   "symbol": "SBILIFE",
+   "name": "SBI Life Insurance Company",
+   "code": "NSE:SBILIFE",
+   "ticker": "SBILIFE.NS",
+   "index": false,
+   "deliv": 57.49
+  },
+  {
    "close": 3701.7,
    "level": 3699.5,
    "diff": 0.06,
@@ -2144,6 +3505,35 @@
    "ticker": "SCHAEFFLER.NS",
    "index": false,
    "deliv": 27.11
+  },
+  {
+   "close": 2516.4,
+   "level": 2535.0,
+   "diff": -0.73,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-11",
+   "atr": 50.71,
+   "inv": 2429.1,
+   "target": 2746.8,
+   "vol_ratio": 0.47,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 2648.0,
+    "above": false
+   },
+   "m": {
+    "level": 2970.0,
+    "above": false
+   },
+   "symbol": "SRF",
+   "name": "SRF",
+   "code": "NSE:SRF",
+   "ticker": "SRF.NS",
+   "index": false,
+   "deliv": 42.73
   },
   {
    "close": 1136.65,
@@ -2465,6 +3855,35 @@
    "deliv": 51.1
   },
   {
+   "close": 1272.9,
+   "level": 1246.4,
+   "diff": 2.13,
+   "group": "above",
+   "days": 5,
+   "kind": "fresh",
+   "level_date": "2026-11-05",
+   "atr": 36.85,
+   "inv": 1182.0,
+   "target": 1375.2,
+   "vol_ratio": 0.64,
+   "vol_on": "breakout bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1317.4,
+    "above": false
+   },
+   "m": {
+    "level": 1464.0,
+    "above": false
+   },
+   "symbol": "UBL",
+   "name": "United Breweries",
+   "code": "NSE:UBL",
+   "ticker": "UBL.NS",
+   "index": false,
+   "deliv": 52.52
+  },
+  {
    "close": 1488.5,
    "level": 1455.0,
    "diff": 2.3,
@@ -2521,6 +3940,35 @@
    "ticker": "UNOMINDA.NS",
    "index": false,
    "deliv": 56.62
+  },
+  {
+   "close": 851.15,
+   "level": 859.8,
+   "diff": -1.01,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-17",
+   "atr": 18.69,
+   "inv": 827.5,
+   "target": 924.4,
+   "vol_ratio": 1.41,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 935.95,
+    "above": false
+   },
+   "m": {
+    "level": 1035.9,
+    "above": false
+   },
+   "symbol": "UTIAMC",
+   "name": "UTI Asset Management Company",
+   "code": "NSE:UTIAMC",
+   "ticker": "UTIAMC.NS",
+   "index": false,
+   "deliv": 31.3
   },
   {
    "close": 1587.1,
@@ -2581,6 +4029,35 @@
    "deliv": 43.49
   },
   {
+   "close": 1215.5,
+   "level": 1179.0,
+   "diff": 3.1,
+   "group": "above",
+   "days": 5,
+   "kind": "fresh",
+   "level_date": "2026-09-15",
+   "atr": 46.36,
+   "inv": 1016.5,
+   "target": 1504.0,
+   "vol_ratio": 5.7,
+   "vol_on": "breakout bar",
+   "vol_ok": true,
+   "w": {
+    "level": 1411.9,
+    "above": false
+   },
+   "m": {
+    "level": 1582.5,
+    "above": false
+   },
+   "symbol": "VOLTAS",
+   "name": "Voltas",
+   "code": "NSE:VOLTAS",
+   "ticker": "VOLTAS.NS",
+   "index": false,
+   "deliv": 43.12
+  },
+  {
    "close": 280.35,
    "level": 267.42,
    "diff": 4.84,
@@ -2637,6 +4114,35 @@
    "ticker": "WIPRO.NS",
    "index": false,
    "deliv": 29.59
+  },
+  {
+   "close": 1768.1,
+   "level": 1794.9,
+   "diff": -1.49,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-12",
+   "atr": 49.03,
+   "inv": 1695.0,
+   "target": 1994.7,
+   "vol_ratio": 0.91,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 1805.7,
+    "above": false
+   },
+   "m": {
+    "level": 2043.7,
+    "above": false
+   },
+   "symbol": "ZENTEC",
+   "name": "Zen Technologies",
+   "code": "NSE:ZENTEC",
+   "ticker": "ZENTEC.NS",
+   "index": false,
+   "deliv": 43.02
   }
  ]
 }

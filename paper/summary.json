@@ -1,0 +1,31 @@
+{
+ "updated": "2026-11-27 15:45 IST",
+ "capital": 500000,
+ "equity": 489883.37,
+ "net": -10116.63,
+ "gross": -9317.81,
+ "charges": 798.82,
+ "days": 1,
+ "trades": 8,
+ "wins": 1,
+ "losses": 7,
+ "win_rate": 12.5,
+ "avg_r": -0.49,
+ "avg_win": 901.05,
+ "avg_loss": -1573.95,
+ "profit_factor": 0.08,
+ "max_drawdown_pct": 0.0,
+ "by_reason": {
+  "stop": 4,
+  "square-off": 4
+ },
+ "daily": [
+  {
+   "date": "2026-11-27",
+   "trades": 8,
+   "net": -10116.63,
+   "wins": 1,
+   "equity": 489883.37
+  }
+ ]
+}

@@ -30,9 +30,9 @@ python -m report.status --scan SCAN
   `message` and a link to https://github.com/klaw2001/india-breakout-scanner/actions, then stop.
 - `holiday` → send one line ("No NSE session on <expected_session>, so no new SCAN scan") and stop.
 
-## 3. Fill missing quarterly results (max 15 lookups per run)
+## 3. Fill missing quarterly results (max 12 lookups per run)
 ```bash
-python -m report.results todo --scan SCAN --limit 15
+python -m report.results todo --scan SCAN --limit 12
 ```
 For each item, run one WebSearch (standard mode), e.g.
 `<name> <expected_quarter> results consolidated net profit revenue YoY`.

@@ -39,18 +39,20 @@ h2 { font-size: 10.5pt; margin: 13pt 0 7pt 0; padding-bottom: 4pt; border-bottom
 table { width: 100%%; border-collapse: collapse; font-size: 6.6pt; margin-bottom: 8pt; }
 thead { display: table-header-group; }
 th { background: #f3f3f3; text-align: left; font-weight: bold; padding: 4pt 3.5pt; border: 0.6pt solid #cfcfcf; vertical-align: top; }
-td { padding: 4pt 3.5pt; border: 0.6pt solid #cfcfcf; vertical-align: top; }
+td { padding: 3pt 3.5pt; border: 0.6pt solid #cfcfcf; vertical-align: top; }
 tr { page-break-inside: avoid; }
 td.n { text-align: right; white-space: nowrap; }
 td.name b { display: block; }
+td.name { width: 15%%; }
 td.name span { color: #666; }
 .small { font-size: 5.9pt; color: #777; display: block; }
-td.res { width: 27%%; font-size: 6.2pt; }
+td.res { width: 29%%; font-size: 6.2pt; line-height: 1.35; }
 td.res.good { background: #e8f5e9; border-left: 2.6pt solid #2e7d32; }
 td.res.inl { background: #fff4e5; border-left: 2.6pt solid #ef8c00; }
 td.res.bad { background: #fdecea; border-left: 2.6pt solid #c62828; }
 .dot { display: inline-block; width: 6.4pt; height: 6.4pt; border-radius: 50%%; vertical-align: -0.8pt; margin-right: 1.5pt; }
 .dot.good { background: #43a047; } .dot.inl { background: #fb8c00; } .dot.bad { background: #e53935; }
+.tf { white-space: nowrap; }
 .tf b { display: inline; }
 table.glob { width: 70%%; font-size: 7pt; }
 .note { color: #555; font-size: 7pt; margin-top: 10pt; }
@@ -89,10 +91,10 @@ def tf_cell(r, longterm):
             parts.append(f'<b class="mut">{lab} n/a</b>')
             continue
         cls, word = ("g", "above") if st["above"] else ("o", "below")
-        parts.append(f'<b class="{cls}">{lab} {word}</b><br>({indian(st["level"])})')
+        parts.append(f'<b class="{cls}">{lab} {word}</b> ({indian(st["level"])})')
     if longterm and r.get("hi52_pct") is not None:
         cls = "g" if r["hi52_pct"] >= -5 else "mut"
-        parts.append(f'<b class="{cls}">52w hi {pct(r["hi52_pct"])}</b><br>({indian(r["hi52"])})')
+        parts.append(f'<b class="{cls}">52w hi {pct(r["hi52_pct"])}</b>')
     return '<td class="tf">' + "<br>".join(parts) + "</td>"
 
 

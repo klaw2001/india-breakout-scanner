@@ -74,8 +74,20 @@ def download(tickers, period="5y", interval="1d", batch=80, log=None, min_rows=3
     return frames
 
 
-def bhavcopy(d: date, log: list):
-    """NSE full bhavcopy with delivery data for date d -> DataFrame indexed by SYMBOL, or None."""
+def bhavcopy(d: date, log: list, wait: bool = False):
+    """NSE full bhavcopy with delivery data for date d -> DataFrame indexed by SYMBOL, or None.
+    wait=True (evening run on the same day): retry for up to 15 min while NSE publishes it."""
+    for round_ in range(4 if wait else 1):
+        df = _bhavcopy_once(d, log)
+        if df is not None or not wait:
+            return df
+        if round_ < 3:
+            log.append("bhavcopy not published yet; waiting 5 min")
+            time.sleep(300)
+    return None
+
+
+def _bhavcopy_once(d: date, log: list):
     ds = d.strftime("%d%m%Y")
     urls = [
         f"https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_{ds}.csv",
@@ -106,11 +118,14 @@ def bhavcopy(d: date, log: list):
     return None
 
 
-def avg_15m_volume(tickers, log):
+def avg_15m_volume(tickers, log, asof=None):
     """Average volume per 15-minute candle over the last ~10 sessions (excluding the 09:15 open candle)."""
-    frames = download(tickers, period="10d", interval="15m", batch=50, log=log, min_rows=20)
+    frames = download(tickers, period="1mo" if asof else "10d", interval="15m", batch=50, log=log, min_rows=20)
     out = {}
     for t, df in frames.items():
+        if asof:
+            df = df[df.index < pd.Timestamp(asof) + pd.Timedelta(days=1)]
+            df = df[df.index.normalize().isin(sorted(set(df.index.normalize()))[-10:])]
         v = df["Volume"]
         idx = df.index
         mask = ~((idx.hour == 9) & (idx.minute == 15)) if hasattr(idx, "hour") else np.ones(len(v), bool)
@@ -121,8 +136,10 @@ def avg_15m_volume(tickers, log):
     return out
 
 
-def global_markets(tickers, log):
+def global_markets(tickers, log, asof=None):
     frames = download([t for t, _ in tickers], period="1mo", interval="1d", batch=20, log=log, min_rows=3)
+    if asof:
+        frames = {t: f[f.index <= pd.Timestamp(asof)] for t, f in frames.items()}
     rows = []
     for t, label in tickers:
         df = frames.get(t)

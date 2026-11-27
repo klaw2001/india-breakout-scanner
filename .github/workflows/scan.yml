@@ -11,6 +11,10 @@ on:
         description: "Comma list of scans: intraday,swing,longterm"
         required: false
         default: "intraday,swing,longterm"
+      asof:
+        description: "Optional YYYY-MM-DD: build the scan as of that day's close"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -41,6 +45,7 @@ jobs:
           EVENT: ${{ github.event_name }}
           SCHEDULE: ${{ github.event.schedule }}
           INPUT_SCANS: ${{ github.event.inputs.scans }}
+          INPUT_ASOF: ${{ github.event.inputs.asof }}
         run: |
           if [ "$EVENT" = "workflow_dispatch" ]; then
             SCANS="${INPUT_SCANS:-intraday,swing,longterm}"
@@ -51,11 +56,17 @@ jobs:
             if [ "$(TZ=Asia/Kolkata date +%u)" = "5" ]; then SCANS="swing,longterm"; fi
           fi
           if ! echo "$SCANS" | grep -Eq '^[a-z,]+$'; then echo "bad scans: $SCANS"; exit 1; fi
+          ASOF=""
+          if [ -n "$INPUT_ASOF" ]; then
+            if ! echo "$INPUT_ASOF" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then echo "bad asof: $INPUT_ASOF"; exit 1; fi
+            ASOF="--asof $INPUT_ASOF"
+          fi
           echo "scans=$SCANS" >> "$GITHUB_OUTPUT"
+          echo "asof=$ASOF" >> "$GITHUB_OUTPUT"
           echo "Running: $SCANS"
 
       - name: Run scans
-        run: python -m scanner.scan --scans "${{ steps.pick.outputs.scans }}"
+        run: python -m scanner.scan --scans "${{ steps.pick.outputs.scans }}" ${{ steps.pick.outputs.asof }}
 
       - name: Commit data
         if: always()

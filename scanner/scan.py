@@ -96,7 +96,7 @@ def session_label(d):
     return d.strftime("%-d %b %Y (%a)")
 
 
-def run(name):
+def run(name, asof=None):
     cfg = SCANS[name]
     log = []
     uni = universe.load(cfg["universe"], log)
@@ -105,6 +105,11 @@ def run(name):
     log.append(f"universe {cfg['universe']}: {len(tick)} symbols")
 
     frames = prices.download(list(tick) + list(idx), period=cfg["period"], log=log)
+    if asof:
+        cut = pd.Timestamp(asof)
+        frames = {t: f[f.index <= cut] for t, f in frames.items()}
+        frames = {t: f for t, f in frames.items() if len(f) >= 30}
+        log.append(f"as-of mode: bars after {asof} dropped")
     log.append(f"yahoo: {len(frames)} of {len(tick) + len(idx)} tickers returned data")
     if len(frames) < 0.5 * (len(tick) + len(idx)):
         raise RuntimeError(f"Yahoo returned only {len(frames)} of {len(tick) + len(idx)} tickers")
@@ -114,7 +119,9 @@ def run(name):
     else:
         session = pd.Series([f.index[-1] for f in frames.values()]).mode()[0].date()
 
-    bhav = prices.bhavcopy(session, log)
+    now = datetime.now(IST)
+    after_close_today = session == now.date() and 15 <= now.hour < 22
+    bhav = prices.bhavcopy(session, log, wait=after_close_today and name != "intraday")
 
     rows, counts = [], {k: 0 for k in ("above", "on", "near1", "near2", "far", "extended")}
     stale = illiquid = nodata = errors = 0
@@ -169,7 +176,7 @@ def run(name):
 
     if name == "intraday":
         listed_stocks = [r["ticker"] for r in rows if not r["index"]]
-        v15 = prices.avg_15m_volume(listed_stocks, log) if listed_stocks else {}
+        v15 = prices.avg_15m_volume(listed_stocks, log, asof=asof) if listed_stocks else {}
         for r in rows:
             if r["ticker"] in v15:
                 r["v15_avg"] = round(v15[r["ticker"]])
@@ -192,7 +199,7 @@ def run(name):
         log=log[-60:],
     )
     if name == "intraday":
-        meta["global"] = prices.global_markets(GLOBAL_TICKERS, log)
+        meta["global"] = prices.global_markets(GLOBAL_TICKERS, log, asof=asof)
 
     out_dir = ROOT / "data" / name
     (out_dir / "history").mkdir(parents=True, exist_ok=True)
@@ -210,11 +217,12 @@ def run(name):
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--scans", default="intraday,swing,longterm")
+    ap.add_argument("--asof", default=None, help="YYYY-MM-DD: ignore bars after this date (backtest / re-run)")
     a = ap.parse_args(argv)
     ok = 0
     for name in [s.strip() for s in a.scans.split(",") if s.strip()]:
         try:
-            run(name)
+            run(name, a.asof)
             ok += 1
         except Exception as e:  # noqa: BLE001
             traceback.print_exc()

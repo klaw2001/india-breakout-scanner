@@ -18,9 +18,12 @@ python -m report.status --scan SCAN
 - `fresh` → continue.
 - `stale`, `failed` or `missing` → start the data job and wait for it:
   ```bash
-  gh workflow run scan.yml -R klaw2001/india-breakout-scanner -f scans=SCAN
-  # poll every 60 s, at most 30 min, until the newest run is completed:
-  gh run list -R klaw2001/india-breakout-scanner --workflow scan.yml -L 1 --json status,conclusion,createdAt
+  # REST only (GraphQL-based `gh workflow run` / `gh run list` are blocked in Claude sessions)
+  gh api -X POST repos/klaw2001/india-breakout-scanner/actions/workflows/scan.yml/dispatches \
+     -f ref=main -f 'inputs[scans]=SCAN'
+  # poll every 60 s, at most 30 min, until the newest run's status is "completed":
+  gh api "repos/klaw2001/india-breakout-scanner/actions/runs?per_page=1" \
+     --jq '.workflow_runs[0] | [.status, .conclusion, .created_at] | @tsv'
   git pull -q && python -m report.status --scan SCAN
   ```
   If still not `fresh`, send the user one short message (SendUserMessage) with the status

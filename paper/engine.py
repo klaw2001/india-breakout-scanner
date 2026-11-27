@@ -248,6 +248,67 @@ def process(st: dict, candles: dict) -> list:
     return ev
 
 
+def simulate(w, after_end, entry, candles, day):
+    """Exit a hypothetical long entered at `entry` on the candle ending `after_end`, with the live rules."""
+    df = candles.get(w["ticker"])
+    risk = entry - w["stop"]
+    if df is None or risk <= 0:
+        return None
+    sq = hm(C.SQUARE_OFF)
+    last_close = None
+    for ts, b in df.iterrows():
+        end = ts + CANDLE
+        if end <= after_end:
+            continue
+        e = mins(end)
+        if e > sq:
+            break
+        last_close = float(b.Close)
+        if b.Low <= w["stop"]:
+            px, why = min(b.Open, w["stop"]), "stop"
+        elif b.High >= w["target"]:
+            px, why = max(b.Open, w["target"]), "target"
+        elif e == sq:
+            px, why = b.Close, "square-off"
+        else:
+            continue
+        px = float(px) * (1 - C.SLIPPAGE)
+        return dict(exit_time=end.strftime("%H:%M"), exit=round(px, 2), exit_reason=why, r=round((px - entry) / risk, 2))
+    if last_close is None:
+        return None
+    px = last_close * (1 - C.SLIPPAGE)
+    return dict(exit_time="close", exit=round(px, 2), exit_reason="square-off", r=round((px - entry) / risk, 2))
+
+
+def compute_whatif(st, candles):
+    """For every watchlist stock that broke out but was never traded: what its first skipped signal would have done."""
+    traded = {t["symbol"] for t in st["closed"]} | set(st["open"])
+    wl = {w["symbol"]: w for w in st["watchlist"]}
+    first = {}
+    for s in st["skipped"]:
+        if s["symbol"] in traded or s["reason"].startswith(("stop", "size")):
+            continue
+        if s["symbol"] not in first or hm(s["time"]) < hm(first[s["symbol"]]["time"]):
+            first[s["symbol"]] = s
+    out = []
+    day = st["date"]
+    for sym, s in first.items():
+        w = wl.get(sym)
+        if not w:
+            continue
+        end = pd.Timestamp(f"{day} {s['time']}")
+        b = bar_at(candles.get(w["ticker"]), end)
+        if b is None:
+            continue
+        entry = float(b.Close) * (1 + C.SLIPPAGE)
+        res = simulate(w, end, entry, candles, day)
+        if res:
+            out.append(dict(symbol=sym, filter=s["reason"].split(":")[0], signal_time=s["time"],
+                            entry=round(entry, 2), **res))
+    st["whatif"] = sorted(out, key=lambda x: x["signal_time"])
+    st["breakouts_seen"] = len(traded) + len(first)
+
+
 def force_square_off(st, candles, ev):
     """End-of-day fallback when the 15:15 candle never arrived."""
     stamp = st["processed_until"] or "15:15"
@@ -367,11 +428,16 @@ def cmd_close(day):
         return None
     st = json.loads(path.read_text())
     ev = []
-    if st["status"] == "open":
+    if st["status"] in ("open", "closed"):
         candles = fetch_candles([w["ticker"] for w in st["watchlist"]], day, now=now_ist())
-        ev += process(st, candles)
         if st["status"] == "open":
-            force_square_off(st, candles, ev)
+            ev += process(st, candles)
+            if st["status"] == "open":
+                force_square_off(st, candles, ev)
+        try:
+            compute_whatif(st, candles)
+        except Exception as e:  # noqa: BLE001  (the review is a bonus; never block the close)
+            st["whatif_error"] = f"{e.__class__.__name__}: {e}"
     save(st, path)
     append_ledger(st)
     s = rebuild_summary()
@@ -401,6 +467,7 @@ def cmd_replay(day, watchlist=None):
     process(st, candles)
     if st["status"] == "open":
         force_square_off(st, candles, [])
+    compute_whatif(st, candles)
     st["replay"] = dict(watchlist=str(watchlist), candles_for=len(candles))
     save(st, state_file(day, replay=True))
     print(day_report(st))

@@ -1,0 +1,1342 @@
+{
+ "date": "2026-11-26",
+ "watchlist_session": "2026-11-25",
+ "capital": 500000,
+ "rules": {
+  "risk_per_trade": 2500,
+  "max_open": 5,
+  "leverage": 5.0
+ },
+ "status": "closed",
+ "processed_until": "15:15",
+ "watchlist": [
+  {
+   "symbol": "ABB",
+   "name": "ABB India",
+   "ticker": "ABB.NS",
+   "group": "near2",
+   "trigger": 7120.0,
+   "stop": 7008.95,
+   "target": 7342.11,
+   "atr": 222.11,
+   "v15_avg": 12606,
+   "v15_trigger": 18910,
+   "prev_close": 7028.5
+  },
+  {
+   "symbol": "ACUTAAS",
+   "name": "Acutaas Chemicals",
+   "ticker": "ACUTAAS.NS",
+   "group": "near2",
+   "trigger": 4045.3,
+   "stop": 3969.8,
+   "target": 4196.31,
+   "atr": 151.01,
+   "v15_avg": 16340,
+   "v15_trigger": 24510,
+   "prev_close": 3993.0
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "name": "Aditya Birla Capital",
+   "ticker": "ABCAPITAL.NS",
+   "group": "above",
+   "trigger": 427.45,
+   "stop": 421.59,
+   "target": 439.16,
+   "atr": 11.71,
+   "v15_avg": 114582,
+   "v15_trigger": 171873,
+   "prev_close": 422.0
+  },
+  {
+   "symbol": "AMBER",
+   "name": "Amber Enterprises India",
+   "ticker": "AMBER.NS",
+   "group": "above",
+   "trigger": 6977.0,
+   "stop": 6818.84,
+   "target": 7293.32,
+   "atr": 316.32,
+   "v15_avg": 27524,
+   "v15_trigger": 41286,
+   "prev_close": 6940.0
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "name": "Anand Rathi Wealth",
+   "ticker": "ANANDRATHI.NS",
+   "group": "near2",
+   "trigger": 2410.0,
+   "stop": 2393.33,
+   "target": 2443.34,
+   "atr": 33.34,
+   "v15_avg": 6698,
+   "v15_trigger": 10047,
+   "prev_close": 2380.0
+  },
+  {
+   "symbol": "APOLLOHOSP",
+   "name": "Apollo Hospitals Enterprise",
+   "ticker": "APOLLOHOSP.NS",
+   "group": "above",
+   "trigger": 9354.0,
+   "stop": 9247.41,
+   "target": 9567.18,
+   "atr": 213.18,
+   "v15_avg": 22044,
+   "v15_trigger": 33065,
+   "prev_close": 9300.0
+  },
+  {
+   "symbol": "ASIANPAINT",
+   "name": "Asian Paints",
+   "ticker": "ASIANPAINT.NS",
+   "group": "near2",
+   "trigger": 2665.5,
+   "stop": 2631.55,
+   "target": 2733.39,
+   "atr": 67.89,
+   "v15_avg": 31263,
+   "v15_trigger": 46894,
+   "prev_close": 2621.2
+  },
+  {
+   "symbol": "AUBANK",
+   "name": "AU Small Finance Bank",
+   "ticker": "AUBANK.NS",
+   "group": "above",
+   "trigger": 1018.0,
+   "stop": 1002.79,
+   "target": 1048.43,
+   "atr": 30.43,
+   "v15_avg": 92293,
+   "v15_trigger": 138440,
+   "prev_close": 1006.05
+  },
+  {
+   "symbol": "AUROPHARMA",
+   "name": "Aurobindo Pharma",
+   "ticker": "AUROPHARMA.NS",
+   "group": "near1",
+   "trigger": 1859.9,
+   "stop": 1838.1,
+   "target": 1903.51,
+   "atr": 43.61,
+   "v15_avg": 53989,
+   "v15_trigger": 80984,
+   "prev_close": 1843.0
+  },
+  {
+   "symbol": "BAJFINANCE",
+   "name": "Bajaj Finance",
+   "ticker": "BAJFINANCE.NS",
+   "group": "above",
+   "trigger": 1148.0,
+   "stop": 1129.85,
+   "target": 1184.3,
+   "atr": 36.3,
+   "v15_avg": 340517,
+   "v15_trigger": 510775,
+   "prev_close": 1131.35
+  },
+  {
+   "symbol": "BAJAJFINSV",
+   "name": "Bajaj Finserv",
+   "ticker": "BAJAJFINSV.NS",
+   "group": "above",
+   "trigger": 1990.0,
+   "stop": 1962.07,
+   "target": 2045.85,
+   "atr": 55.85,
+   "v15_avg": 51950,
+   "v15_trigger": 77924,
+   "prev_close": 1925.0
+  },
+  {
+   "symbol": "BANKBARODA",
+   "name": "Bank of Baroda",
+   "ticker": "BANKBARODA.NS",
+   "group": "near1",
+   "trigger": 276.85,
+   "stop": 272.91,
+   "target": 284.74,
+   "atr": 7.89,
+   "v15_avg": 683615,
+   "v15_trigger": 1025422,
+   "prev_close": 276.43
+  },
+  {
+   "symbol": "BEL",
+   "name": "Bharat Electronics",
+   "ticker": "BEL.NS",
+   "group": "near1",
+   "trigger": 406.7,
+   "stop": 402.43,
+   "target": 415.25,
+   "atr": 8.55,
+   "v15_avg": 315795,
+   "v15_trigger": 473693,
+   "prev_close": 404.3
+  },
+  {
+   "symbol": "BRITANNIA",
+   "name": "Britannia Industries",
+   "ticker": "BRITANNIA.NS",
+   "group": "above",
+   "trigger": 5076.2,
+   "stop": 5010.76,
+   "target": 5207.08,
+   "atr": 130.88,
+   "v15_avg": 11422,
+   "v15_trigger": 17134,
+   "prev_close": 5076.2
+  },
+  {
+   "symbol": "CANBK",
+   "name": "Canara Bank",
+   "ticker": "CANBK.NS",
+   "group": "above",
+   "trigger": 135.6,
+   "stop": 133.63,
+   "target": 139.54,
+   "atr": 3.94,
+   "v15_avg": 1297977,
+   "v15_trigger": 1946965,
+   "prev_close": 133.46
+  },
+  {
+   "symbol": "CHOLAFIN",
+   "name": "Cholamandalam Investment and Finance Company",
+   "ticker": "CHOLAFIN.NS",
+   "group": "near1",
+   "trigger": 1884.7,
+   "stop": 1857.89,
+   "target": 1938.32,
+   "atr": 53.62,
+   "v15_avg": 64123,
+   "v15_trigger": 96185,
+   "prev_close": 1868.0
+  },
+  {
+   "symbol": "CIPLA",
+   "name": "Cipla",
+   "ticker": "CIPLA.NS",
+   "group": "above",
+   "trigger": 1447.0,
+   "stop": 1434.25,
+   "target": 1472.5,
+   "atr": 25.5,
+   "v15_avg": 66056,
+   "v15_trigger": 99084,
+   "prev_close": 1433.2
+  },
+  {
+   "symbol": "CUB",
+   "name": "City Union Bank",
+   "ticker": "CUB.NS",
+   "group": "near1",
+   "trigger": 248.85,
+   "stop": 244.43,
+   "target": 257.68,
+   "atr": 8.83,
+   "v15_avg": 203370,
+   "v15_trigger": 305055,
+   "prev_close": 247.0
+  },
+  {
+   "symbol": "COLPAL",
+   "name": "Colgate Palmolive (India)",
+   "ticker": "COLPAL.NS",
+   "group": "near1",
+   "trigger": 1836.6,
+   "stop": 1814.92,
+   "target": 1879.95,
+   "atr": 43.35,
+   "v15_avg": 14459,
+   "v15_trigger": 21689,
+   "prev_close": 1825.0
+  },
+  {
+   "symbol": "CROMPTON",
+   "name": "Crompton Greaves Consumer Electricals",
+   "ticker": "CROMPTON.NS",
+   "group": "near2",
+   "trigger": 223.45,
+   "stop": 219.62,
+   "target": 231.11,
+   "atr": 7.66,
+   "v15_avg": 134750,
+   "v15_trigger": 202125,
+   "prev_close": 219.5
+  },
+  {
+   "symbol": "DELHIVERY",
+   "name": "Delhivery",
+   "ticker": "DELHIVERY.NS",
+   "group": "near1",
+   "trigger": 465.8,
+   "stop": 459.04,
+   "target": 479.32,
+   "atr": 13.52,
+   "v15_avg": 131275,
+   "v15_trigger": 196913,
+   "prev_close": 462.0
+  },
+  {
+   "symbol": "DIVISLAB",
+   "name": "Divi's Laboratories",
+   "ticker": "DIVISLAB.NS",
+   "group": "near1",
+   "trigger": 11824.0,
+   "stop": 11632.07,
+   "target": 12207.86,
+   "atr": 383.86,
+   "v15_avg": 30223,
+   "v15_trigger": 45334,
+   "prev_close": 11716.5
+  },
+  {
+   "symbol": "DLF",
+   "name": "DLF",
+   "ticker": "DLF.NS",
+   "group": "above",
+   "trigger": 798.0,
+   "stop": 788.19,
+   "target": 817.63,
+   "atr": 19.63,
+   "v15_avg": 123559,
+   "v15_trigger": 185338,
+   "prev_close": 795.0
+  },
+  {
+   "symbol": "DRREDDY",
+   "name": "Dr. Reddy's Laboratories",
+   "ticker": "DRREDDY.NS",
+   "group": "near1",
+   "trigger": 1404.0,
+   "stop": 1392.59,
+   "target": 1426.81,
+   "atr": 22.81,
+   "v15_avg": 49682,
+   "v15_trigger": 74523,
+   "prev_close": 1398.0
+  },
+  {
+   "symbol": "EICHERMOT",
+   "name": "Eicher Motors",
+   "ticker": "EICHERMOT.NS",
+   "group": "above",
+   "trigger": 8360.0,
+   "stop": 8245.39,
+   "target": 8589.21,
+   "atr": 229.21,
+   "v15_avg": 28219,
+   "v15_trigger": 42329,
+   "prev_close": 8336.0
+  },
+  {
+   "symbol": "ETERNAL",
+   "name": "ETERNAL",
+   "ticker": "ETERNAL.NS",
+   "group": "near2",
+   "trigger": 378.0,
+   "stop": 373.05,
+   "target": 387.9,
+   "atr": 9.9,
+   "v15_avg": 789145,
+   "v15_trigger": 1183718,
+   "prev_close": 371.7
+  },
+  {
+   "symbol": "FORCEMOT",
+   "name": "FORCE MOTORS",
+   "ticker": "FORCEMOT.NS",
+   "group": "near1",
+   "trigger": 20478.0,
+   "stop": 20111.46,
+   "target": 21211.07,
+   "atr": 733.07,
+   "v15_avg": 3405,
+   "v15_trigger": 5108,
+   "prev_close": 20392.0
+  },
+  {
+   "symbol": "GLENMARK",
+   "name": "Glenmark Pharmaceuticals",
+   "ticker": "GLENMARK.NS",
+   "group": "above",
+   "trigger": 2737.0,
+   "stop": 2691.73,
+   "target": 2827.55,
+   "atr": 90.55,
+   "v15_avg": 23167,
+   "v15_trigger": 34751,
+   "prev_close": 2719.0
+  },
+  {
+   "symbol": "GRASIM",
+   "name": "Grasim Industries",
+   "ticker": "GRASIM.NS",
+   "group": "above",
+   "trigger": 3169.3,
+   "stop": 3132.61,
+   "target": 3242.69,
+   "atr": 73.39,
+   "v15_avg": 34030,
+   "v15_trigger": 51044,
+   "prev_close": 3162.0
+  },
+  {
+   "symbol": "HAVELLS",
+   "name": "Havells India",
+   "ticker": "HAVELLS.NS",
+   "group": "above",
+   "trigger": 1199.5,
+   "stop": 1181.76,
+   "target": 1234.98,
+   "atr": 35.48,
+   "v15_avg": 39207,
+   "v15_trigger": 58810,
+   "prev_close": 1196.4
+  },
+  {
+   "symbol": "HDFCLIFE",
+   "name": "HDFC Life Insurance Company",
+   "ticker": "HDFCLIFE.NS",
+   "group": "near2",
+   "trigger": 609.75,
+   "stop": 600.61,
+   "target": 628.02,
+   "atr": 18.27,
+   "v15_avg": 144122,
+   "v15_trigger": 216183,
+   "prev_close": 601.3
+  },
+  {
+   "symbol": "HEROMOTOCO",
+   "name": "Hero MotoCorp",
+   "ticker": "HEROMOTOCO.NS",
+   "group": "above",
+   "trigger": 5751.5,
+   "stop": 5681.16,
+   "target": 5892.18,
+   "atr": 140.68,
+   "v15_avg": 26036,
+   "v15_trigger": 39053,
+   "prev_close": 5751.5
+  },
+  {
+   "symbol": "ICICIBANK",
+   "name": "ICICI Bank",
+   "ticker": "ICICIBANK.NS",
+   "group": "above",
+   "trigger": 1650.0,
+   "stop": 1630.07,
+   "target": 1689.86,
+   "atr": 39.86,
+   "v15_avg": 590081,
+   "v15_trigger": 885122,
+   "prev_close": 1640.0
+  },
+  {
+   "symbol": "ICICILIFE",
+   "name": "ICICI Life Insurance",
+   "ticker": "ICICILIFE.NS",
+   "group": "above",
+   "trigger": 491.5,
+   "stop": 483.95,
+   "target": 506.61,
+   "atr": 15.11,
+   "v15_avg": 86894,
+   "v15_trigger": 130341,
+   "prev_close": 474.0
+  },
+  {
+   "symbol": "IDFCFIRSTB",
+   "name": "IDFC First Bank",
+   "ticker": "IDFCFIRSTB.NS",
+   "group": "near1",
+   "trigger": 88.1,
+   "stop": 86.85,
+   "target": 90.6,
+   "atr": 2.5,
+   "v15_avg": 1088822,
+   "v15_trigger": 1633233,
+   "prev_close": 87.47
+  },
+  {
+   "symbol": "IOC",
+   "name": "Indian Oil Corporation",
+   "ticker": "IOC.NS",
+   "group": "near2",
+   "trigger": 150.05,
+   "stop": 148.14,
+   "target": 153.87,
+   "atr": 3.82,
+   "v15_avg": 406746,
+   "v15_trigger": 610119,
+   "prev_close": 147.79
+  },
+  {
+   "symbol": "NAUKRI",
+   "name": "Info Edge (India)",
+   "ticker": "NAUKRI.NS",
+   "group": "near1",
+   "trigger": 1229.6,
+   "stop": 1212.55,
+   "target": 1263.69,
+   "atr": 34.09,
+   "v15_avg": 48541,
+   "v15_trigger": 72812,
+   "prev_close": 1220.0
+  },
+  {
+   "symbol": "INDIGO",
+   "name": "InterGlobe Aviation",
+   "ticker": "INDIGO.NS",
+   "group": "above",
+   "trigger": 5765.0,
+   "stop": 5682.82,
+   "target": 5929.36,
+   "atr": 164.36,
+   "v15_avg": 37371,
+   "v15_trigger": 56057,
+   "prev_close": 5720.0
+  },
+  {
+   "symbol": "LTF",
+   "name": "L&T Finance",
+   "ticker": "LTF.NS",
+   "group": "above",
+   "trigger": 292.4,
+   "stop": 287.42,
+   "target": 302.35,
+   "atr": 9.95,
+   "v15_avg": 170111,
+   "v15_trigger": 255167,
+   "prev_close": 283.95
+  },
+  {
+   "symbol": "LT",
+   "name": "Larsen & Toubro",
+   "ticker": "LT.NS",
+   "group": "near2",
+   "trigger": 4213.8,
+   "stop": 4170.97,
+   "target": 4299.46,
+   "atr": 85.66,
+   "v15_avg": 68712,
+   "v15_trigger": 103069,
+   "prev_close": 4156.0
+  },
+  {
+   "symbol": "LAURUSLABS",
+   "name": "Laurus Labs",
+   "ticker": "LAURUSLABS.NS",
+   "group": "near2",
+   "trigger": 2488.0,
+   "stop": 2446.08,
+   "target": 2571.84,
+   "atr": 83.84,
+   "v15_avg": 108691,
+   "v15_trigger": 163037,
+   "prev_close": 2460.0
+  },
+  {
+   "symbol": "M&M",
+   "name": "Mahindra & Mahindra",
+   "ticker": "M&M.NS",
+   "group": "above",
+   "trigger": 3526.0,
+   "stop": 3471.97,
+   "target": 3634.06,
+   "atr": 108.06,
+   "v15_avg": 107860,
+   "v15_trigger": 161790,
+   "prev_close": 3509.5
+  },
+  {
+   "symbol": "MANKIND",
+   "name": "Mankind Pharma",
+   "ticker": "MANKIND.NS",
+   "group": "near1",
+   "trigger": 2705.0,
+   "stop": 2672.69,
+   "target": 2769.61,
+   "atr": 64.61,
+   "v15_avg": 15232,
+   "v15_trigger": 22848,
+   "prev_close": 2685.0
+  },
+  {
+   "symbol": "MARICO",
+   "name": "Marico",
+   "ticker": "MARICO.NS",
+   "group": "above",
+   "trigger": 935.2,
+   "stop": 926.44,
+   "target": 952.73,
+   "atr": 17.53,
+   "v15_avg": 75715,
+   "v15_trigger": 113573,
+   "prev_close": 935.2
+  },
+  {
+   "symbol": "MFSL",
+   "name": "Max Financial Services",
+   "ticker": "MFSL.NS",
+   "group": "near1",
+   "trigger": 1448.7,
+   "stop": 1422.88,
+   "target": 1500.34,
+   "atr": 51.64,
+   "v15_avg": 58997,
+   "v15_trigger": 88495,
+   "prev_close": 1444.0
+  },
+  {
+   "symbol": "MAXHEALTH",
+   "name": "Max Healthcare Institute",
+   "ticker": "MAXHEALTH.NS",
+   "group": "above",
+   "trigger": 1099.65,
+   "stop": 1084.62,
+   "target": 1129.71,
+   "atr": 30.06,
+   "v15_avg": 156100,
+   "v15_trigger": 234149,
+   "prev_close": 1076.3
+  },
+  {
+   "symbol": "NESTLEIND",
+   "name": "Nestle India",
+   "ticker": "NESTLEIND.NS",
+   "group": "near2",
+   "trigger": 1385.9,
+   "stop": 1369.75,
+   "target": 1418.19,
+   "atr": 32.29,
+   "v15_avg": 48924,
+   "v15_trigger": 73385,
+   "prev_close": 1358.5
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "name": "Oberoi Realty",
+   "ticker": "OBEROIRLTY.NS",
+   "group": "near1",
+   "trigger": 1882.9,
+   "stop": 1856.44,
+   "target": 1935.82,
+   "atr": 52.92,
+   "v15_avg": 16664,
+   "v15_trigger": 24997,
+   "prev_close": 1868.5
+  },
+  {
+   "symbol": "POLICYBZR",
+   "name": "PB Fintech",
+   "ticker": "POLICYBZR.NS",
+   "group": "above",
+   "trigger": 1176.4,
+   "stop": 1149.0,
+   "target": 1231.21,
+   "atr": 54.81,
+   "v15_avg": 206546,
+   "v15_trigger": 309819,
+   "prev_close": 1123.8
+  },
+  {
+   "symbol": "PERSISTENT",
+   "name": "Persistent Systems",
+   "ticker": "PERSISTENT.NS",
+   "group": "near2",
+   "trigger": 6240.0,
+   "stop": 6153.41,
+   "target": 6413.18,
+   "atr": 173.18,
+   "v15_avg": 23188,
+   "v15_trigger": 34783,
+   "prev_close": 6120.0
+  },
+  {
+   "symbol": "POWERGRID",
+   "name": "Power Grid Corporation of India",
+   "ticker": "POWERGRID.NS",
+   "group": "near2",
+   "trigger": 270.2,
+   "stop": 266.8,
+   "target": 277.0,
+   "atr": 6.8,
+   "v15_avg": 352948,
+   "v15_trigger": 529423,
+   "prev_close": 266.75
+  },
+  {
+   "symbol": "PRESTIGE",
+   "name": "Prestige Estates Projects",
+   "ticker": "PRESTIGE.NS",
+   "group": "near2",
+   "trigger": 1704.1,
+   "stop": 1676.07,
+   "target": 1760.15,
+   "atr": 56.05,
+   "v15_avg": 33123,
+   "v15_trigger": 49684,
+   "prev_close": 1685.1
+  },
+  {
+   "symbol": "RADICO",
+   "name": "Radico Khaitan",
+   "ticker": "RADICO.NS",
+   "group": "on",
+   "trigger": 4703.7,
+   "stop": 4642.55,
+   "target": 4826.01,
+   "atr": 122.31,
+   "v15_avg": 14086,
+   "v15_trigger": 21130,
+   "prev_close": 4699.0
+  },
+  {
+   "symbol": "SAGILITY",
+   "name": "SAGILITY",
+   "ticker": "SAGILITY.NS",
+   "group": "near1",
+   "trigger": 46.12,
+   "stop": 45.47,
+   "target": 47.42,
+   "atr": 1.3,
+   "v15_avg": 999546,
+   "v15_trigger": 1499319,
+   "prev_close": 45.87
+  },
+  {
+   "symbol": "SBICARD",
+   "name": "SBI Cards and Payment Services",
+   "ticker": "SBICARD.NS",
+   "group": "near1",
+   "trigger": 591.0,
+   "stop": 582.56,
+   "target": 607.87,
+   "atr": 16.87,
+   "v15_avg": 32183,
+   "v15_trigger": 48274,
+   "prev_close": 589.0
+  },
+  {
+   "symbol": "SBILIFE",
+   "name": "SBI Life Insurance Company",
+   "ticker": "SBILIFE.NS",
+   "group": "near1",
+   "trigger": 1834.6,
+   "stop": 1811.42,
+   "target": 1880.96,
+   "atr": 46.36,
+   "v15_avg": 39727,
+   "v15_trigger": 59590,
+   "prev_close": 1823.9
+  },
+  {
+   "symbol": "SHREECEM",
+   "name": "SHREE CEMENT",
+   "ticker": "SHREECEM.NS",
+   "group": "near1",
+   "trigger": 25450.0,
+   "stop": 25173.57,
+   "target": 26002.86,
+   "atr": 552.86,
+   "v15_avg": 859,
+   "v15_trigger": 1288,
+   "prev_close": 25245.0
+  },
+  {
+   "symbol": "SHRIRAMFIN",
+   "name": "Shriram Finance",
+   "ticker": "SHRIRAMFIN.NS",
+   "group": "near2",
+   "trigger": 1006.6,
+   "stop": 990.96,
+   "target": 1037.88,
+   "atr": 31.28,
+   "v15_avg": 207661,
+   "v15_trigger": 311491,
+   "prev_close": 989.95
+  },
+  {
+   "symbol": "SRF",
+   "name": "SRF",
+   "ticker": "SRF.NS",
+   "group": "near1",
+   "trigger": 2535.0,
+   "stop": 2509.39,
+   "target": 2586.22,
+   "atr": 51.22,
+   "v15_avg": 8656,
+   "v15_trigger": 12984,
+   "prev_close": 2516.0
+  },
+  {
+   "symbol": "SUNPHARMA",
+   "name": "Sun Pharmaceutical Industries",
+   "ticker": "SUNPHARMA.NS",
+   "group": "near1",
+   "trigger": 1914.8,
+   "stop": 1891.74,
+   "target": 1960.92,
+   "atr": 46.12,
+   "v15_avg": 73513,
+   "v15_trigger": 110270,
+   "prev_close": 1901.0
+  },
+  {
+   "symbol": "TCS",
+   "name": "Tata Consultancy Services",
+   "ticker": "TCS.NS",
+   "group": "near2",
+   "trigger": 2549.9,
+   "stop": 2515.46,
+   "target": 2618.77,
+   "atr": 68.87,
+   "v15_avg": 122050,
+   "v15_trigger": 183075,
+   "prev_close": 2517.3
+  },
+  {
+   "symbol": "INDHOTEL",
+   "name": "The Indian Hotels Company",
+   "ticker": "INDHOTEL.NS",
+   "group": "near1",
+   "trigger": 909.65,
+   "stop": 897.6,
+   "target": 933.75,
+   "atr": 24.1,
+   "v15_avg": 164520,
+   "v15_trigger": 246780,
+   "prev_close": 903.85
+  },
+  {
+   "symbol": "PHOENIXLTD",
+   "name": "The Phoenix Mills",
+   "ticker": "PHOENIXLTD.NS",
+   "group": "near1",
+   "trigger": 2300.0,
+   "stop": 2263.91,
+   "target": 2372.18,
+   "atr": 72.18,
+   "v15_avg": 25505,
+   "v15_trigger": 38257,
+   "prev_close": 2285.5
+  },
+  {
+   "symbol": "TORNTPHARM",
+   "name": "Torrent Pharmaceuticals",
+   "ticker": "TORNTPHARM.NS",
+   "group": "above",
+   "trigger": 4895.5,
+   "stop": 4847.95,
+   "target": 4990.59,
+   "atr": 95.09,
+   "v15_avg": 11758,
+   "v15_trigger": 17637,
+   "prev_close": 4895.5
+  },
+  {
+   "symbol": "TRENT",
+   "name": "Trent",
+   "ticker": "TRENT.NS",
+   "group": "above",
+   "trigger": 3349.9,
+   "stop": 3307.32,
+   "target": 3435.05,
+   "atr": 85.15,
+   "v15_avg": 37585,
+   "v15_trigger": 56378,
+   "prev_close": 3319.6
+  },
+  {
+   "symbol": "TVSMOTOR",
+   "name": "TVS Motor Company",
+   "ticker": "TVSMOTOR.NS",
+   "group": "near1",
+   "trigger": 4636.1,
+   "stop": 4578.28,
+   "target": 4751.74,
+   "atr": 115.64,
+   "v15_avg": 35906,
+   "v15_trigger": 53859,
+   "prev_close": 4610.0
+  },
+  {
+   "symbol": "ULTRACEMCO",
+   "name": "UltraTech Cement",
+   "ticker": "ULTRACEMCO.NS",
+   "group": "above",
+   "trigger": 12860.0,
+   "stop": 12721.54,
+   "target": 13136.93,
+   "atr": 276.93,
+   "v15_avg": 8809,
+   "v15_trigger": 13214,
+   "prev_close": 12800.0
+  },
+  {
+   "symbol": "VBL",
+   "name": "Varun Beverages",
+   "ticker": "VBL.NS",
+   "group": "near2",
+   "trigger": 443.4,
+   "stop": 438.18,
+   "target": 453.83,
+   "atr": 10.43,
+   "v15_avg": 139784,
+   "v15_trigger": 209676,
+   "prev_close": 437.1
+  },
+  {
+   "symbol": "VOLTAS",
+   "name": "Voltas",
+   "ticker": "VOLTAS.NS",
+   "group": "near2",
+   "trigger": 1245.0,
+   "stop": 1221.19,
+   "target": 1292.61,
+   "atr": 47.61,
+   "v15_avg": 56985,
+   "v15_trigger": 85478,
+   "prev_close": 1232.4
+  },
+  {
+   "symbol": "ZYDUSLIFE",
+   "name": "Zydus Lifesciences",
+   "ticker": "ZYDUSLIFE.NS",
+   "group": "above",
+   "trigger": 1236.0,
+   "stop": 1221.73,
+   "target": 1264.55,
+   "atr": 28.55,
+   "v15_avg": 42689,
+   "v15_trigger": 64034,
+   "prev_close": 1236.0
+  }
+ ],
+ "open": {},
+ "closed": [
+  {
+   "symbol": "PRESTIGE",
+   "name": "Prestige Estates Projects",
+   "ticker": "PRESTIGE.NS",
+   "entry_time": "09:45",
+   "entry": 1712.06,
+   "qty": 69,
+   "stop": 1676.07,
+   "target": 1760.15,
+   "trigger": 1704.1,
+   "risk_ps": 35.99,
+   "exit_time": "12:00",
+   "exit": 1759.27,
+   "reason": "target",
+   "gross": 3257.49,
+   "charges": 89.77,
+   "net": 3167.72,
+   "r": 1.31
+  },
+  {
+   "symbol": "RADICO",
+   "name": "Radico Khaitan",
+   "ticker": "RADICO.NS",
+   "entry_time": "09:30",
+   "entry": 4714.96,
+   "qty": 34,
+   "stop": 4642.55,
+   "target": 4826.01,
+   "trigger": 4703.7,
+   "risk_ps": 72.41,
+   "exit_time": "15:15",
+   "exit": 4676.66,
+   "reason": "square-off",
+   "gross": -1302.2,
+   "charges": 103.33,
+   "net": -1405.53,
+   "r": -0.53
+  },
+  {
+   "symbol": "PHOENIXLTD",
+   "name": "The Phoenix Mills",
+   "ticker": "PHOENIXLTD.NS",
+   "entry_time": "09:30",
+   "entry": 2306.95,
+   "qty": 58,
+   "stop": 2263.91,
+   "target": 2372.18,
+   "trigger": 2300.0,
+   "risk_ps": 43.04,
+   "exit_time": "15:15",
+   "exit": 2303.65,
+   "reason": "square-off",
+   "gross": -191.4,
+   "charges": 94.3,
+   "net": -285.7,
+   "r": -0.08
+  },
+  {
+   "symbol": "LAURUSLABS",
+   "name": "Laurus Labs",
+   "ticker": "LAURUSLABS.NS",
+   "entry_time": "09:45",
+   "entry": 2497.25,
+   "qty": 48,
+   "stop": 2446.08,
+   "target": 2571.84,
+   "trigger": 2488.0,
+   "risk_ps": 51.17,
+   "exit_time": "15:15",
+   "exit": 2503.15,
+   "reason": "square-off",
+   "gross": 283.2,
+   "charges": 89.53,
+   "net": 193.67,
+   "r": 0.12
+  },
+  {
+   "symbol": "TCS",
+   "name": "Tata Consultancy Services",
+   "ticker": "TCS.NS",
+   "entry_time": "09:45",
+   "entry": 2561.78,
+   "qty": 53,
+   "stop": 2515.46,
+   "target": 2618.77,
+   "trigger": 2549.9,
+   "risk_ps": 46.32,
+   "exit_time": "15:15",
+   "exit": 2617.46,
+   "reason": "target",
+   "gross": 2951.04,
+   "charges": 95.9,
+   "net": 2855.14,
+   "r": 1.2
+  },
+  {
+   "symbol": "SBILIFE",
+   "name": "SBI Life Insurance Company",
+   "ticker": "SBILIFE.NS",
+   "entry_time": "12:00",
+   "entry": 1841.62,
+   "qty": 82,
+   "stop": 1811.42,
+   "target": 1880.96,
+   "trigger": 1834.6,
+   "risk_ps": 30.2,
+   "exit_time": "15:15",
+   "exit": 1844.88,
+   "reason": "square-off",
+   "gross": 267.32,
+   "charges": 100.5,
+   "net": 166.82,
+   "r": 0.11
+  }
+ ],
+ "skipped": [
+  {
+   "symbol": "ACUTAAS",
+   "time": "09:30",
+   "reason": "volume: 25,930 < 49,020 needed"
+  },
+  {
+   "symbol": "DLF",
+   "time": "09:30",
+   "reason": "volume: 135,747 < 370,677 needed"
+  },
+  {
+   "symbol": "FORCEMOT",
+   "time": "09:30",
+   "reason": "volume: 4,611 < 10,215 needed"
+  },
+  {
+   "symbol": "GLENMARK",
+   "time": "09:30",
+   "reason": "volume: 32,011 < 69,501 needed"
+  },
+  {
+   "symbol": "HEROMOTOCO",
+   "time": "09:30",
+   "reason": "volume: 29,691 < 78,108 needed"
+  },
+  {
+   "symbol": "MFSL",
+   "time": "09:30",
+   "reason": "volume: 14,207 < 176,991 needed"
+  },
+  {
+   "symbol": "PERSISTENT",
+   "time": "09:30",
+   "reason": "volume: 23,685 < 69,564 needed"
+  },
+  {
+   "symbol": "PRESTIGE",
+   "time": "09:30",
+   "reason": "volume: 90,768 < 99,369 needed"
+  },
+  {
+   "symbol": "SAGILITY",
+   "time": "09:30",
+   "reason": "volume: 2,664,003 < 2,998,638 needed"
+  },
+  {
+   "symbol": "TCS",
+   "time": "09:30",
+   "reason": "volume: 262,682 < 366,150 needed"
+  },
+  {
+   "symbol": "TORNTPHARM",
+   "time": "09:30",
+   "reason": "chase: closed 84.50 above trigger (> 0.5 ATR)"
+  },
+  {
+   "symbol": "ACUTAAS",
+   "time": "09:45",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "FORCEMOT",
+   "time": "09:45",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "HEROMOTOCO",
+   "time": "09:45",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "SAGILITY",
+   "time": "09:45",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "GLENMARK",
+   "time": "09:45",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "BANKBARODA",
+   "time": "10:00",
+   "reason": "volume: 281,078 < 1,025,422 needed"
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "time": "10:00",
+   "reason": "volume: 12,564 < 24,997 needed"
+  },
+  {
+   "symbol": "SRF",
+   "time": "10:00",
+   "reason": "volume: 8,127 < 12,984 needed"
+  },
+  {
+   "symbol": "BEL",
+   "time": "10:00",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "PERSISTENT",
+   "time": "10:00",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "HEROMOTOCO",
+   "time": "10:00",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "GRASIM",
+   "time": "10:15",
+   "reason": "volume: 27,265 < 51,044 needed"
+  },
+  {
+   "symbol": "SUNPHARMA",
+   "time": "10:15",
+   "reason": "volume: 82,056 < 110,270 needed"
+  },
+  {
+   "symbol": "TORNTPHARM",
+   "time": "10:15",
+   "reason": "volume: 17,565 < 17,637 needed"
+  },
+  {
+   "symbol": "CIPLA",
+   "time": "10:15",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "BEL",
+   "time": "10:30",
+   "reason": "volume: 295,828 < 473,693 needed"
+  },
+  {
+   "symbol": "DLF",
+   "time": "10:30",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "CIPLA",
+   "time": "10:45",
+   "reason": "volume: 60,006 < 99,084 needed"
+  },
+  {
+   "symbol": "BRITANNIA",
+   "time": "10:45",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "NAUKRI",
+   "time": "11:00",
+   "reason": "volume: 51,609 < 72,812 needed"
+  },
+  {
+   "symbol": "SUNPHARMA",
+   "time": "11:00",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "CIPLA",
+   "time": "11:15",
+   "reason": "chase: closed 21.60 above trigger (> 0.5 ATR)"
+  },
+  {
+   "symbol": "DLF",
+   "time": "11:15",
+   "reason": "chase: closed 11.00 above trigger (> 0.5 ATR)"
+  },
+  {
+   "symbol": "SUNPHARMA",
+   "time": "11:15",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "BRITANNIA",
+   "time": "11:30",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "MFSL",
+   "time": "11:30",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "time": "11:45",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "SBILIFE",
+   "time": "11:45",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "BRITANNIA",
+   "time": "12:00",
+   "reason": "chase: closed 81.60 above trigger (> 0.5 ATR)"
+  },
+  {
+   "symbol": "SAGILITY",
+   "time": "12:30",
+   "reason": "chase: closed 0.77 above trigger (> 0.5 ATR)"
+  },
+  {
+   "symbol": "MARICO",
+   "time": "12:45",
+   "reason": "volume: 100,932 < 113,573 needed"
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "time": "12:45",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "BRITANNIA",
+   "time": "13:15",
+   "reason": "volume: 15,145 < 17,134 needed"
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "time": "13:15",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "SAGILITY",
+   "time": "13:15",
+   "reason": "slots: max open positions / trades reached"
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "time": "13:30",
+   "reason": "reward: target less than 1R away"
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "time": "13:45",
+   "reason": "volume: 9,283 < 10,047 needed"
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "time": "14:30",
+   "reason": "chase: closed 27.20 above trigger (> 0.5 ATR)"
+  }
+ ],
+ "events": [
+  {
+   "time": "09:30",
+   "text": "\ud83d\udfe2 BUY RADICO 34 @ \u20b94,714.96 (09:30 candle close) | stop \u20b94,642.55 \u00b7 target \u20b94,826.01 \u00b7 risk \u20b92,461.82"
+  },
+  {
+   "time": "09:30",
+   "text": "\ud83d\udfe2 BUY PHOENIXLTD 58 @ \u20b92,306.95 (09:30 candle close) | stop \u20b92,263.91 \u00b7 target \u20b92,372.18 \u00b7 risk \u20b92,496.49"
+  },
+  {
+   "time": "09:45",
+   "text": "\ud83d\udfe2 BUY PRESTIGE 69 @ \u20b91,712.06 (09:45 candle close) | stop \u20b91,676.07 \u00b7 target \u20b91,760.15 \u00b7 risk \u20b92,483.00"
+  },
+  {
+   "time": "09:45",
+   "text": "\ud83d\udfe2 BUY LAURUSLABS 48 @ \u20b92,497.25 (09:45 candle close) | stop \u20b92,446.08 \u00b7 target \u20b92,571.84 \u00b7 risk \u20b92,456.06"
+  },
+  {
+   "time": "09:45",
+   "text": "\ud83d\udfe2 BUY TCS 53 @ \u20b92,561.78 (09:45 candle close) | stop \u20b92,515.46 \u00b7 target \u20b92,618.77 \u00b7 risk \u20b92,454.97"
+  },
+  {
+   "time": "12:00",
+   "text": "\u2705 EXIT PRESTIGE @ \u20b91,759.27 (target, 12:00) | net \u20b93,167.72 \u00b7 1.31R"
+  },
+  {
+   "time": "12:00",
+   "text": "\ud83d\udfe2 BUY SBILIFE 82 @ \u20b91,841.62 (12:00 candle close) | stop \u20b91,811.42 \u00b7 target \u20b91,880.96 \u00b7 risk \u20b92,476.42"
+  },
+  {
+   "time": "15:15",
+   "text": "\u23f9 EXIT RADICO @ \u20b94,676.66 (square-off, 15:15) | net \u20b9-1,405.53 \u00b7 -0.53R"
+  },
+  {
+   "time": "15:15",
+   "text": "\u23f9 EXIT PHOENIXLTD @ \u20b92,303.65 (square-off, 15:15) | net \u20b9-285.70 \u00b7 -0.08R"
+  },
+  {
+   "time": "15:15",
+   "text": "\u23f9 EXIT LAURUSLABS @ \u20b92,503.15 (square-off, 15:15) | net \u20b9193.67 \u00b7 0.12R"
+  },
+  {
+   "time": "15:15",
+   "text": "\u2705 EXIT TCS @ \u20b92,617.46 (target, 15:15) | net \u20b92,855.14 \u00b7 1.2R"
+  },
+  {
+   "time": "15:15",
+   "text": "\u23f9 EXIT SBILIFE @ \u20b91,844.88 (square-off, 15:15) | net \u20b9166.82 \u00b7 0.11R"
+  }
+ ],
+ "replay": {
+  "watchlist": "/tmp/watchlist.json",
+  "candles_for": 70
+ }
+}

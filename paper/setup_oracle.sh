@@ -8,6 +8,13 @@ echo "Repo: $REPO"
 echo "1/5 Timezone -> Asia/Kolkata (cron times below are IST)"
 sudo timedatectl set-timezone Asia/Kolkata
 
+MEM_MB=$(awk '/MemTotal/ {print int($2/1024)}' /proc/meminfo)
+if [ "$MEM_MB" -lt 2000 ] && ! swapon --show | grep -q .; then
+  echo "    small server (${MEM_MB} MB RAM): adding a 2 GB swapfile so pip installs don't run out of memory"
+  sudo fallocate -l 2G /swapfile && sudo chmod 600 /swapfile && sudo mkswap -q /swapfile && sudo swapon /swapfile
+  grep -q '^/swapfile' /etc/fstab || echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab >/dev/null
+fi
+
 echo "2/5 System packages"
 sudo apt-get update -qq
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq python3-venv python3-pip git >/dev/null

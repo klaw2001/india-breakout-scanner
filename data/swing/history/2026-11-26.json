@@ -5,21 +5,21 @@
   "short": "Swing",
   "session_date": "2026-11-26",
   "session_label": "26 Nov 2026 (Thu)",
-  "generated_at": "2026-11-27T06:51:29Z",
-  "generated_ist": "27 Nov 2026 12:21 IST",
+  "generated_at": "2026-11-27T22:00:43Z",
+  "generated_ist": "28 Nov 2026 03:30 IST",
   "universe": "nifty500",
   "universe_size": 501,
   "indices": 12,
-  "scanned": 509,
-  "stale": 2,
+  "scanned": 511,
+  "stale": 0,
   "illiquid": 0,
   "nodata": 2,
   "errors": 0,
-  "filled_from_bhavcopy": 187,
+  "filled_from_bhavcopy": 0,
   "counts": {
    "above": 80,
    "on": 10,
-   "near1": 33,
+   "near1": 35,
    "near2": 19,
    "far": 354,
    "extended": 13
@@ -46,11 +46,8 @@
   },
   "log": [
    "universe nifty500: 501 symbols",
-   "as-of mode: bars after 2026-11-26 dropped",
    "yahoo: 511 of 513 tickers returned data",
-   "bhavcopy 2026-11-26: 2992 rows from nsearchives.nseindia.com",
-   "stale BIRET.NS: last bar 2026-11-25 00:00:00",
-   "stale EMBASSY.NS: last bar 2026-11-25 00:00:00"
+   "bhavcopy 2026-11-26: 2992 rows from nsearchives.nseindia.com"
   ]
  },
  "rows": [
@@ -722,6 +719,34 @@
    "deliv": 56.54
   },
   {
+   "close": 319.0,
+   "level": 323.0,
+   "diff": -1.24,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-05",
+   "atr": 3.52,
+   "inv": 315.22,
+   "target": 338.56,
+   "vol_ratio": 1.05,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 347.85,
+    "above": false
+   },
+   "m": {
+    "level": 347.85,
+    "above": false
+   },
+   "symbol": "BIRET",
+   "name": "Brookfield India Real Estate Trust",
+   "code": "NSE:BIRET",
+   "ticker": "BIRET.NS",
+   "index": false
+  },
+  {
    "close": 3990.4,
    "level": 4003.3,
    "diff": -0.32,
@@ -1329,6 +1354,34 @@
    "ticker": "EMAMILTD.NS",
    "index": false,
    "deliv": 50.76
+  },
+  {
+   "close": 422.54,
+   "level": 424.98,
+   "diff": -0.57,
+   "group": "near1",
+   "days": 0,
+   "kind": "overhead",
+   "level_date": "2026-11-09",
+   "atr": 5.82,
+   "inv": 407.0,
+   "target": 460.94,
+   "vol_ratio": 0.61,
+   "vol_on": "last bar",
+   "vol_ok": false,
+   "w": {
+    "level": 453.99,
+    "above": false
+   },
+   "m": {
+    "level": 454.85,
+    "above": false
+   },
+   "symbol": "EMBASSY",
+   "name": "EMBASSY OFFICE PARKS REIT",
+   "code": "NSE:EMBASSY",
+   "ticker": "EMBASSY.NS",
+   "index": false
   },
   {
    "close": 2696.8,

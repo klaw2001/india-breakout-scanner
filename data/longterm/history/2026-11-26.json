@@ -5,15 +5,15 @@
   "short": "Long-term",
   "session_date": "2026-11-26",
   "session_label": "26 Nov 2026 (Thu)",
-  "generated_at": "2026-11-27T06:40:11Z",
-  "generated_ist": "27 Nov 2026 12:10 IST",
+  "generated_at": "2026-11-27T06:46:35Z",
+  "generated_ist": "27 Nov 2026 12:16 IST",
   "universe": "allnse",
   "universe_size": 2636,
   "indices": 12,
   "scanned": 572,
-  "stale": 1884,
+  "stale": 1874,
   "illiquid": 153,
-  "nodata": 39,
+  "nodata": 49,
   "errors": 0,
   "counts": {
    "above": 52,
@@ -47,8 +47,13 @@
   "log": [
    "universe allnse: 2636 symbols",
    "as-of mode: bars after 2026-11-26 dropped",
-   "yahoo: 2616 of 2648 tickers returned data",
-   "bhavcopy 2026-11-26: 2992 rows from nsearchives.nseindia.com"
+   "yahoo: 2605 of 2648 tickers returned data",
+   "bhavcopy 2026-11-26: 2992 rows from nsearchives.nseindia.com",
+   "stale 20MICRONS.NS: last bar 2026-11-25 00:00:00",
+   "stale 21STCENMGM.NS: last bar 2026-11-25 00:00:00",
+   "stale 3BBLACKBIO.NS: last bar 2026-11-25 00:00:00",
+   "stale 3MINDIA.NS: last bar 2026-11-25 00:00:00",
+   "stale 3PLAND.NS: last bar 2026-11-25 00:00:00"
   ]
  },
  "rows": [

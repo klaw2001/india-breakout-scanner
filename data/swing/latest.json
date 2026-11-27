@@ -5,8 +5,8 @@
   "short": "Swing",
   "session_date": "2026-11-26",
   "session_label": "26 Nov 2026 (Thu)",
-  "generated_at": "2026-11-27T06:36:39Z",
-  "generated_ist": "27 Nov 2026 12:06 IST",
+  "generated_at": "2026-11-27T06:43:32Z",
+  "generated_ist": "27 Nov 2026 12:13 IST",
   "universe": "nifty500",
   "universe_size": 501,
   "indices": 12,
@@ -47,7 +47,12 @@
    "universe nifty500: 501 symbols",
    "as-of mode: bars after 2026-11-26 dropped",
    "yahoo: 511 of 513 tickers returned data",
-   "bhavcopy 2026-11-26: 2992 rows from nsearchives.nseindia.com"
+   "bhavcopy 2026-11-26: 2992 rows from nsearchives.nseindia.com",
+   "stale AIAENG.NS: last bar 2026-11-25 00:00:00",
+   "stale AADHARHFC.NS: last bar 2026-11-25 00:00:00",
+   "stale AAVAS.NS: last bar 2026-11-25 00:00:00",
+   "stale ABBOTINDIA.NS: last bar 2026-11-25 00:00:00",
+   "stale ACE.NS: last bar 2026-11-25 00:00:00"
   ]
  },
  "rows": [

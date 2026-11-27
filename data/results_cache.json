@@ -1,8 +1,29 @@
 {
+ "360ONE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Total income ₹1,261 Cr +13.9%, PAT ₹300 Cr -4.9% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
+ },
  "ACE": {
   "quarter": "Q2 FY27",
   "verdict": "Good",
   "text": "Rev ₹886 Cr +19%, PAT ₹164 Cr +82% YoY (incl. ₹50 Cr one-off gain)",
+  "checked": "2026-11-27",
+  "source": "web search"
+ },
+ "ACMESOLAR": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹1,007 Cr +67.5%, PAT ₹269 Cr +133.5% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
+ },
+ "ACUTAAS": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹437 Cr +42.7%, PAT ₹123 Cr +71% YoY",
   "checked": "2026-11-27",
   "source": "web search"
  },
@@ -12,6 +33,13 @@
   "text": "Rev ₹11,340 Cr +24%, PAT ₹3,682 Cr +18% YoY",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "AEGISLOG": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹2,213 Cr -3.5%, PAT ₹321 Cr +32% (owners' ₹261 Cr +45%) YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
  },
  "AETHER": {
   "quarter": "Q2 FY27",
@@ -26,6 +54,20 @@
   "text": "Rev ₹784 Cr +21%, PAT ₹130 Cr +17% YoY",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "ANGELONE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹1,430 Cr, PAT ₹335 Cr +58% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
+ },
+ "ANTHEM": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹572 Cr +4%, PAT ₹221 Cr +27% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
  },
  "APOLLOHOSP": {
   "quarter": "Q2 FY27",
@@ -48,12 +90,33 @@
   "checked": "2026-11-27",
   "source": "web search"
  },
+ "BAJAJHLDNG": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Consol PAT ₹1,993 Cr +28% (standalone PAT ₹1,404 Cr) YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
+ },
  "BECTORFOOD": {
   "quarter": "Q2 FY27",
   "verdict": "Good",
   "text": "Rev ₹631 Cr +14%, EBITDA +19%, PAT ₹46 Cr +25% YoY",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "BEL": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹7,291 Cr +26.5%, PAT ₹1,540 Cr +19.7% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
+ },
+ "BEML": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹1,192 Cr +42%, PAT ₹33 Cr -30.5% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
  },
  "BLUESTARCO": {
   "quarter": "Q2 FY27",
@@ -75,6 +138,20 @@
   "text": "Rev ₹502 Cr −32%, PAT ₹216 Cr +39% YoY",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "CHOICEIN": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Total income ₹379 Cr, PAT ₹69 Cr +23% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
+ },
+ "CIPLA": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Rev ₹7,404 Cr -2%, PAT ₹852 Cr -37% YoY",
+  "checked": "2026-11-27",
+  "source": "web search"
  },
  "CRAFTSMAN": {
   "quarter": "Q2 FY27",
@@ -215,6 +292,13 @@
   "text": "Rev ₹3,040 Cr +12%; PAT ₹548 Cr +67% (+16.5% ex ₹165 Cr one-off), beat consensus",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "MAHABANK": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "PAT ₹2,310 Cr +41% YoY (NII not found)",
+  "checked": "2026-11-27",
+  "source": "web search"
  },
  "MANIPALHOS": {
   "quarter": "Q2 FY27",

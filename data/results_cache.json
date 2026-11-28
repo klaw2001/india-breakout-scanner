@@ -6,6 +6,13 @@
   "checked": "2026-11-27",
   "source": "web search"
  },
+ "AARTIPHARM": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev +47%, PAT ₹75.4 Cr vs ₹27.9 Cr (+170%) YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
+ },
  "ACE": {
   "quarter": "Q2 FY27",
   "verdict": "Good",
@@ -41,6 +48,13 @@
   "checked": "2026-11-27",
   "source": "web search"
  },
+ "AEROPLANE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹694 Cr, PAT +26.2% YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
+ },
  "AETHER": {
   "quarter": "Q2 FY27",
   "verdict": "Good",
@@ -54,6 +68,27 @@
   "text": "Rev ₹784 Cr +21%, PAT ₹130 Cr +17% YoY",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "ALGOQUANT": {
+  "quarter": "Q2 FY27",
+  "verdict": "Bad",
+  "text": "Fair-value gains fell; PAT ₹5.88 Cr, down YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
+ },
+ "ALICON": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹650 Cr +51%, PAT ₹17.6 Cr +26.7% YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
+ },
+ "ANANDRATHI": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "AUM above ₹1 lakh Cr; PAT ₹121.9 Cr +22% YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
  },
  "ANGELONE": {
   "quarter": "Q2 FY27",
@@ -76,12 +111,33 @@
   "checked": "2026-11-27",
   "source": "web search"
  },
+ "ARIS": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "EBITDA margin 11.6%; PAT ₹22.8 Cr (record) +50% YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
+ },
  "ARVSMART": {
   "quarter": "Q2 FY27",
   "verdict": "Good",
   "text": "Rev ₹157 Cr +11%, EBITDA +87%, PAT ₹23 Cr +26% YoY",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "ASAHIINDIA": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev +36.9%, PAT ₹167 Cr vs ₹56.6 Cr (+195%) YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
+ },
+ "AUROPHARMA": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹10,263 Cr +23.9%, PAT +32.5% YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
  },
  "AXISBANK": {
   "quarter": "Q2 FY27",
@@ -95,6 +151,13 @@
   "verdict": "Good",
   "text": "Consol PAT ₹1,993 Cr +28% (standalone PAT ₹1,404 Cr) YoY",
   "checked": "2026-11-27",
+  "source": "web search"
+ },
+ "BANKINDIA": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Op profit +33.2%, PAT ₹3,202 Cr +25.3% YoY",
+  "checked": "2026-11-28",
   "source": "web search"
  },
  "BECTORFOOD": {
@@ -125,12 +188,26 @@
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
  },
+ "BPLPHARMA": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev +111%, back to profit YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
+ },
  "BRITANNIA": {
   "quarter": "Q2 FY27",
   "verdict": "In-line",
   "text": "Rev ₹5,598 Cr +16%, PAT ₹726 Cr +11% YoY",
   "checked": "2026-11-15",
   "source": "Grok scan 26 Nov 2026 (cache checked 15 Nov)"
+ },
+ "CENTRALBK": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "NII-led; PAT ₹1,469 Cr +21.1% YoY",
+  "checked": "2026-11-28",
+  "source": "web search"
  },
  "CHALET": {
   "quarter": "Q2 FY27",
@@ -151,6 +228,13 @@
   "verdict": "Bad",
   "text": "Rev ₹7,404 Cr -2%, PAT ₹852 Cr -37% YoY",
   "checked": "2026-11-27",
+  "source": "web search"
+ },
+ "COFORGE": {
+  "quarter": "Q2 FY27",
+  "verdict": "Good",
+  "text": "Rev ₹6,171 Cr +53.6%, PAT ₹588 Cr +56.5% YoY",
+  "checked": "2026-11-28",
   "source": "web search"
  },
  "CRAFTSMAN": {
